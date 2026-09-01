@@ -1,0 +1,2759 @@
+{
+  "summary": {
+    "total_files": 65,
+    "total_tests": 260,
+    "passed": 260,
+    "failed": 0,
+    "test2_framework": "Test2::V0",
+    "enhanced_diagnostics": {
+      "test2_enhanced_failures": 0,
+      "error_type_breakdown": {},
+      "diagnostic_coverage": "0/0",
+      "comparison_tables": 0,
+      "structured_failures": "0/0"
+    }
+  },
+  "tests": {
+    "test_File_traverse.t": [
+      {
+        "test_num": 1,
+        "description": "traverse is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Valid callback returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Invalid callback throws error",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Callback exception is propagated",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_basename.t": [
+      {
+        "test_num": 1,
+        "description": "basename is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "basename returns file name",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "basename returns empty string on empty file name",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "basename returns file name with special characters",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_BEGIN.t": [
+      {
+        "test_num": 1,
+        "description": "parent is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "parent returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "parent returns a Path::Class::Dir object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "parent returns result for non-existent file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_new.t": [
+      {
+        "test_num": 1,
+        "description": "new is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_basename.t": [
+      {
+        "test_num": 1,
+        "description": "basename is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "basename returns empty string on empty path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "basename returns last directory name on valid path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "basename returns last directory name on path with multiple components",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "basename crashes on invalid path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_is_dir.t": [
+      {
+        "test_num": 1,
+        "description": "is_dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "is_dir returns 1",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_volume.t": [
+      {
+        "test_num": 1,
+        "description": "volume is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result for valid directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns undefined for invalid directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_new.t": [
+      {
+        "test_num": 1,
+        "description": "new is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_rmtree.t": [
+      {
+        "test_num": 1,
+        "description": "rmtree is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Directory removed successfully",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "rmtree on non-existent directory did not crash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Read-only directory removed successfully",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Error handling works correctly",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_slurp.t": [
+      {
+        "test_num": 1,
+        "description": "slurp is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Slurp in scalar context returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Slurp in scalar context returns correct result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Slurp in list context returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_traverse.t": [
+      {
+        "test_num": 1,
+        "description": "traverse is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "traverse returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "traverse on empty directory returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "traverse on non-existent directory throws correct error",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_remove.t": [
+      {
+        "test_num": 1,
+        "description": "remove is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Remove non-existent file returns false",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Remove existing file returns true",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Remove directory returns false",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_dir_list.t": [
+      {
+        "test_num": 1,
+        "description": "dir_list is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result in scalar context",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Returns a scalar value",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_is_dir.t": [
+      {
+        "test_num": 1,
+        "description": "is_dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "is_dir returns 0",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_volume.t": [
+      {
+        "test_num": 1,
+        "description": "volume is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Volume is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Volume is not defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Volume method error",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Error message correct",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_traverse_if.t": [
+      {
+        "test_num": 1,
+        "description": "traverse_if is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "traverse_if returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "traverse_if with invalid callback throws an error",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_lstat.t": [
+      {
+        "test_num": 1,
+        "description": "lstat is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_openw.t": [
+      {
+        "test_num": 1,
+        "description": "openw is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "openw returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "openw throws exception on permissions issue",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity__spec_class.t": [
+      {
+        "test_num": 1,
+        "description": "_spec_class is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Returns correct class for Unix",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Dies with correct error message for empty type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Dies with correct error message for tainted type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_tempfile.t": [
+      {
+        "test_num": 1,
+        "description": "tempfile is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Temporary directory created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "tempfile function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "tempfile function with arguments returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Invalid directory created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "tempfile function handles invalid directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_relative.t": [
+      {
+        "test_num": 1,
+        "description": "relative is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Entity created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_contains.t": [
+      {
+        "test_num": 1,
+        "description": "contains is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Too many arguments",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "No second entity",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Directory does not exist",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "File does not exist",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Directory contains file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Directory contains subdirectory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_opena.t": [
+      {
+        "test_num": 1,
+        "description": "opena is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "opena returns a filehandle",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "opena throws exception for non-writable file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_dir.t": [
+      {
+        "test_num": 1,
+        "description": "dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "dir returns defined directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "dir returns new directory when not defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_open.t": [
+      {
+        "test_num": 1,
+        "description": "open is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Open returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Returned object is an IO::Dir",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Class_foreign_dir.t": [
+      {
+        "test_num": 1,
+        "description": "foreign_dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function crashes with empty directory path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_move_to.t": [
+      {
+        "test_num": 1,
+        "description": "move_to is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "move_to returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "move_to returns undef on failure",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_is_relative.t": [
+      {
+        "test_num": 1,
+        "description": "is_relative is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "is_relative returns 1 for relative path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "is_relative returns 0 for absolute path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Error handling works",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Error message correct",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_components.t": [
+      {
+        "test_num": 1,
+        "description": "components is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "components returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "components throws exception with arguments",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "components returns result for file with no directory component",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir__is_local_dot_dir.t": [
+      {
+        "test_num": 1,
+        "description": "_is_local_dot_dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns true for current directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns true for parent directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns false for other directories",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns false for non-string input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns false for undefined input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_spew_lines.t": [
+      {
+        "test_num": 1,
+        "description": "spew_lines is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns undefined with invalid content",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns undefined with readonly file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_components.t": [
+      {
+        "test_num": 1,
+        "description": "components is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "components returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "components with offset and length returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "components with invalid offset returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "components with non-numeric offset returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_touch.t": [
+      {
+        "test_num": 1,
+        "description": "touch is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "touch succeeds on existing file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "touch creates non-existent file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_open.t": [
+      {
+        "test_num": 1,
+        "description": "open is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Open returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Open crashes with invalid mode",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity__spec.t": [
+      {
+        "test_num": 1,
+        "description": "_spec is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "_spec returns default File::Spec for non-object reference",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "_spec returns default File::Spec for undefined input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Class_foreign_file.t": [
+      {
+        "test_num": 1,
+        "description": "foreign_file is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "foreign_file returns a result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "foreign_file throws an error for invalid platform",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_file.t": [
+      {
+        "test_num": 1,
+        "description": "file is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Returned object is of class Path::Class::File",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "File object has the correct path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_openr.t": [
+      {
+        "test_num": 1,
+        "description": "openr is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "openr returns a filehandle",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "openr throws an error for permission denied",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_resolve.t": [
+      {
+        "test_num": 1,
+        "description": "resolve is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Class_file.t": [
+      {
+        "test_num": 1,
+        "description": "file is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result for single path component",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result for multiple path components",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_PRUNE.t": [
+      {
+        "test_num": 1,
+        "description": "PRUNE is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "PRUNE function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "PRUNE function returns a code reference",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "PRUNE function returns a reference to itself",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_relative.t": [
+      {
+        "test_num": 1,
+        "description": "relative is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "relative returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "relative returns result with current directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "relative returns result with different directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "relative returns result with string argument",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_mkpath.t": [
+      {
+        "test_num": 1,
+        "description": "mkpath is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result for existing directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result for nested directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_new_foreign.t": [
+      {
+        "test_num": 1,
+        "description": "new_foreign is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "new_foreign returns result with valid type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "new_foreign throws exception with invalid type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "new_foreign throws exception with empty type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "new_foreign throws exception with undefined type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_subdir.t": [
+      {
+        "test_num": 1,
+        "description": "subdir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "subdir returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "subdir returns result with multiple components",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "subdir returns result with no components",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_traverse_if.t": [
+      {
+        "test_num": 1,
+        "description": "traverse_if is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Traverse with always-true condition returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Traverse with always-false condition returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Traverse with conditional condition returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_boolify.t": [
+      {
+        "test_num": 1,
+        "description": "boolify is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "boolify returns 1",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_parent.t": [
+      {
+        "test_num": 1,
+        "description": "parent is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Absolute directory parent returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Current directory parent returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Relative directory parent returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Relative directory parent returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Single directory parent returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_cleanup.t": [
+      {
+        "test_num": 1,
+        "description": "cleanup is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_copy_to.t": [
+      {
+        "test_num": 1,
+        "description": "copy_to is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Copy to file returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Destination file exists",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Copy to directory returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Destination file exists in directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Copy to non-existent directory raises error",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Copy to file that is a directory raises error",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_absolute.t": [
+      {
+        "test_num": 1,
+        "description": "absolute is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Entity created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_as_foreign.t": [
+      {
+        "test_num": 1,
+        "description": "as_foreign is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "as_foreign returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "as_foreign returns result for empty directory path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "as_foreign dies with invalid directory object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Class_tempdir.t": [
+      {
+        "test_num": 1,
+        "description": "tempdir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Returned object is an instance of Path::Class::Dir",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Temporary directory exists",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns undef when File::Temp::tempdir fails",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_stringify.t": [
+      {
+        "test_num": 1,
+        "description": "stringify is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Correct directory path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Empty directory path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Directory path with special characters",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 9,
+        "description": "Directory path with non-ASCII characters",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Class_dir.t": [
+      {
+        "test_num": 1,
+        "description": "dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "dir returns a result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "dir returns a Path::Class::Dir object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "dir returns the correct path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "dir returns a result with empty input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "dir returns a result with invalid directory components",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_dir_class.t": [
+      {
+        "test_num": 1,
+        "description": "dir_class is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "dir_class returns the correct class name",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_new.t": [
+      {
+        "test_num": 1,
+        "description": "new is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result with empty input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result with single directory path component",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result with multiple directory path components",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result with Path::Class::Dir object as input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns undef with undef as input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Function returns result with empty string as input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_children.t": [
+      {
+        "test_num": 1,
+        "description": "children is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result for successful directory opening",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_as_foreign.t": [
+      {
+        "test_num": 1,
+        "description": "as_foreign is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result for valid input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function crashes for undefined file object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function crashes for invalid type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result for file object with no directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_recurse.t": [
+      {
+        "test_num": 1,
+        "description": "recurse is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Missing callback parameter throws exception",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Callback was called",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Preorder recursion callback was called",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Depth-first recursion callback was called",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "PRUNE constant prevented further recursion",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_is_absolute.t": [
+      {
+        "test_num": 1,
+        "description": "is_absolute is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_file_class.t": [
+      {
+        "test_num": 1,
+        "description": "file_class is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "file_class returns the correct class name",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_next.t": [
+      {
+        "test_num": 1,
+        "description": "next is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "next returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_spew.t": [
+      {
+        "test_num": 1,
+        "description": "spew is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "File object created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "File created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Content written correctly",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "File object created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "File created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Array content written correctly",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "File object created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_subsumes.t": [
+      {
+        "test_num": 1,
+        "description": "subsumes is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Too many arguments",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "No second entity",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result for non-Path::Class::Entity object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result for non-directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Absolute path subsumes",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Relative path subsumes",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Root directory subsumes",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 9,
+        "description": "Current directory subsumes relative path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ]
+  },
+  "metadata": {
+    "test_framework": "Test2::V0",
+    "parsing_enhanced": true,
+    "diagnostic_features": [
+      "enhanced_error_reporting",
+      "structured_diagnostics",
+      "better_comparison_output",
+      "exception_capture",
+      "comparison_table_extraction"
+    ]
+  }
+}

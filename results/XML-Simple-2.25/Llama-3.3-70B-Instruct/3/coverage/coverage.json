@@ -1,0 +1,497 @@
+{
+  "metadata": {
+    "subject": "XML-Simple-2.25",
+    "model_id": "meta-llama/llama-3-3-70b-instruct",
+    "run": "3",
+    "decoding": {
+      "temperature": 0.3,
+      "top_p": 0.2,
+      "max_tokens": 10000
+    },
+    "framework": {
+      "perl": "5.26.3",
+      "test": "Test2::V0 0.000139",
+      "coverage": "Devel::Cover 1.36"
+    }
+  },
+  "capping": {
+    "assertions_kept": 184,
+    "assertions_masked": 94,
+    "expected_passing": 187,
+    "files_disabled": 0,
+    "assertions_excluded_unreliable": 0,
+    "verified": {
+      "passing": 187,
+      "failing": 0
+    },
+    "files_disabled_present": 0
+  },
+  "coverage": {
+    "note": "Percentages as reported by Devel::Cover. 'modules' holds the files under test, which are the figures the study reports. 'total_all_files' is Devel::Cover's own Total row, which averages modules, generated tests and the prove binary together and is therefore not module coverage.",
+    "modules": [
+      {
+        "file": "XML/Simple.pm",
+        "stmt": 67.5,
+        "bran": 47.7,
+        "cond": 47.6,
+        "sub": 94.0,
+        "pod": 37.5,
+        "time": 5.1,
+        "total": 59.2
+      }
+    ],
+    "test_files": [
+      {
+        "file": "test_Simple_XMLin.t",
+        "stmt": 97.3,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 95.8
+      },
+      {
+        "file": "test_Simple_XMLout.t",
+        "stmt": 91.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 86.5
+      },
+      {
+        "file": "test_Simple__get_object.t",
+        "stmt": 91.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 86.6
+      },
+      {
+        "file": "test_Simple__strict_mode_for_caller.t",
+        "stmt": 91.8,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 87.8
+      },
+      {
+        "file": "test_Simple_array_to_hash.t",
+        "stmt": 92.3,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 88.1
+      },
+      {
+        "file": "test_Simple_build_simple_tree.t",
+        "stmt": 91.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 86.6
+      },
+      {
+        "file": "test_Simple_build_tree.t",
+        "stmt": 90.2,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 85.2
+      },
+      {
+        "file": "test_Simple_build_tree_xml_parser.t",
+        "stmt": 93.8,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 90.6
+      },
+      {
+        "file": "test_Simple_cache_read_memcopy.t",
+        "stmt": 94.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 90.7
+      },
+      {
+        "file": "test_Simple_cache_read_memshare.t",
+        "stmt": 97.2,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 95.7
+      },
+      {
+        "file": "test_Simple_cache_read_storable.t",
+        "stmt": 93.4,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 89.7
+      },
+      {
+        "file": "test_Simple_cache_write_memcopy.t",
+        "stmt": 95.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 92.5
+      },
+      {
+        "file": "test_Simple_cache_write_memshare.t",
+        "stmt": 90.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 85.1
+      },
+      {
+        "file": "test_Simple_cache_write_storable.t",
+        "stmt": 91.3,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 1.6,
+        "total": 86.0
+      },
+      {
+        "file": "test_Simple_characters.t",
+        "stmt": 89.5,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 84.0
+      },
+      {
+        "file": "test_Simple_collapse.t",
+        "stmt": 89.8,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 84.7
+      },
+      {
+        "file": "test_Simple_collapse_content.t",
+        "stmt": 91.9,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 87.6
+      },
+      {
+        "file": "test_Simple_copy_hash.t",
+        "stmt": 94.7,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.6,
+        "total": 92.1
+      },
+      {
+        "file": "test_Simple_default_config_file.t",
+        "stmt": 93.2,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 89.4
+      },
+      {
+        "file": "test_Simple_die_or_warn.t",
+        "stmt": 97.3,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 94.1
+      },
+      {
+        "file": "test_Simple_end_document.t",
+        "stmt": 95.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 92.4
+      },
+      {
+        "file": "test_Simple_end_element.t",
+        "stmt": 92.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 88.0
+      },
+      {
+        "file": "test_Simple_escape_attr.t",
+        "stmt": 89.5,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 1.6,
+        "total": 83.8
+      },
+      {
+        "file": "test_Simple_escape_value.t",
+        "stmt": 90.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 85.3
+      },
+      {
+        "file": "test_Simple_find_xml_file.t",
+        "stmt": 97.3,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 95.8
+      },
+      {
+        "file": "test_Simple_get_var.t",
+        "stmt": 90.9,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 86.4
+      },
+      {
+        "file": "test_Simple_handle_options.t",
+        "stmt": 93.3,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 90.0
+      },
+      {
+        "file": "test_Simple_hash_to_array.t",
+        "stmt": 97.6,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.8,
+        "total": 96.3
+      },
+      {
+        "file": "test_Simple_import.t",
+        "stmt": 90.5,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 86.1
+      },
+      {
+        "file": "test_Simple_new.t",
+        "stmt": 91.8,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 87.8
+      },
+      {
+        "file": "test_Simple_new_hashref.t",
+        "stmt": 93.4,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 90.1
+      },
+      {
+        "file": "test_Simple_new_xml_parser.t",
+        "stmt": 97.2,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 95.7
+      },
+      {
+        "file": "test_Simple_normalise_space.t",
+        "stmt": 89.4,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 84.6
+      },
+      {
+        "file": "test_Simple_numeric_escape.t",
+        "stmt": 91.8,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 87.5
+      },
+      {
+        "file": "test_Simple_parse_fh.t",
+        "stmt": 94.7,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.4,
+        "total": 92.1
+      },
+      {
+        "file": "test_Simple_parse_file.t",
+        "stmt": 92.3,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 88.1
+      },
+      {
+        "file": "test_Simple_parse_string.t",
+        "stmt": 91.2,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 86.8
+      },
+      {
+        "file": "test_Simple_set_var.t",
+        "stmt": 92.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 88.0
+      },
+      {
+        "file": "test_Simple_sorted_keys.t",
+        "stmt": 95.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 92.4
+      },
+      {
+        "file": "test_Simple_start_document.t",
+        "stmt": 93.4,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.3,
+        "total": 90.1
+      },
+      {
+        "file": "test_Simple_start_element.t",
+        "stmt": 91.6,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 87.3
+      },
+      {
+        "file": "test_Simple_storable_filename.t",
+        "stmt": 95.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 92.4
+      },
+      {
+        "file": "test_Simple_value_to_xml.t",
+        "stmt": 90.4,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 2.2,
+        "total": 85.7
+      }
+    ],
+    "harness": [
+      {
+        "file": "/usr/bin/prove",
+        "stmt": 100.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 0.8,
+        "total": 90.4
+      }
+    ],
+    "total_all_files": {
+      "stmt": 86.7,
+      "bran": 48.7,
+      "cond": 47.6,
+      "sub": 98.8,
+      "pod": 37.5,
+      "time": 100.0,
+      "total": 79.4
+    }
+  }
+}

@@ -1,0 +1,68 @@
+#!/bin/bash
+set -eu
+
+# listed from the artifact so they cannot drift
+usage () {
+  first () { ls -1 "$1" | head -1; }
+  echo "usage: run-cell <subject> <model> <run> [stage]"
+  echo
+  echo "  subjects: $(ls -1 /artifact | tr '\n' ' ')"
+  echo "  models  : $(ls -1 /artifact/$(first /artifact) | tr '\n' ' ')"
+  echo "  runs    : 1 2 3"
+  echo "  stages  : initial repair coverage   (default: initial)"
+  exit "${1:-0}"
+}
+[ $# -ge 3 ] || usage 1
+
+subject=$1; model=$2; run=$3; stage=${4:-initial}
+cell=/artifact/$subject/$model/$run/$stage
+[ -d "$cell" ] || { echo "no such cell: $cell" >&2; echo; usage 1; }
+
+# the tests write files next to themselves, so run on a copy
+work=$(mktemp -d)
+cp "$cell"/*.t "$work"/
+cd "$work"
+
+# Devel::Cover runs without ignore filters, so the test files and the harness appear as
+# their own rows next to the module. Compare the module row with coverage.json.
+if [ "$stage" = coverage ]; then
+  # Devel::Cover only reports files under the working directory
+  cp -r "/subjects/$subject/lib/." .
+  PERL5OPT=-MDevel::Cover prove -I. *.t || true
+  echo
+  cover -report text 2>/dev/null | sed -n '1,/^Total /p' || true
+else
+  prove -I"/subjects/$subject/lib" -I. *.t || true
+fi
+
+# what the study recorded, for comparison with the run above
+perl -MJSON::PP -e '
+  open my $fh, "<", $ARGV[0] or die "$ARGV[0]: $!\n";
+  my $d = decode_json(do { local $/; <$fh> });
+  my $s = $d->{summary};
+  printf "\nrecorded in the study: %d passed, %d failed, over %d files\n",
+         $s->{passed}, $s->{failed}, $s->{total_files};
+  # entries the parser records for a file that did not execute or exited abnormally
+  my $synthetic = grep { ($_->{description} // "") =~
+                         /^(file did not execute|Test file exited with non-zero code)$/ }
+                  map { ref eq "ARRAY" ? @$_ : () } values %{$d->{tests}};
+  printf "%d of the failing entries record a file that did not execute or exited\n" .
+         "abnormally. prove reports those at file level, not as assertions, so its\n" .
+         "total is lower than the one above.\n", $synthetic
+    if $synthetic;
+' "$cell/perl_test_results.json"
+
+# the module rows recorded in the study, to compare with the report above
+if [ "$stage" = coverage ]; then
+  perl -MJSON::PP -e '
+    open my $fh, "<", $ARGV[0] or die "$ARGV[0]: $!\n";
+    my $c = decode_json(do { local $/; <$fh> })->{coverage};
+    printf "\nrecorded module coverage:\n";
+    printf "%-24s %6s %6s %6s %6s\n", "File", "stmt", "bran", "cond", "sub";
+    for my $m (@{ $c->{modules} }) {
+      # one decimal like the report above; "n/a" passes through unchanged
+      printf "%-24s %6s %6s %6s %6s\n", $m->{file},
+             map { /^[0-9.]+$/ ? sprintf "%.1f", $_ : $_ } @{$m}{qw(stmt bran cond sub)};
+    }
+  ' "$cell/coverage.json"
+fi

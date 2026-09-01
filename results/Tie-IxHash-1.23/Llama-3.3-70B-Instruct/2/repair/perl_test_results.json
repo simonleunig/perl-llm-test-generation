@@ -1,0 +1,1835 @@
+{
+  "summary": {
+    "total_files": 28,
+    "total_tests": 141,
+    "passed": 121,
+    "failed": 20,
+    "test2_framework": "Test2::V0",
+    "enhanced_diagnostics": {
+      "test2_enhanced_failures": 20,
+      "error_type_breakdown": {
+        "test_failure": 15,
+        "unknown": 4,
+        "no_output": 1
+      },
+      "diagnostic_coverage": "20/20",
+      "comparison_tables": 6,
+      "structured_failures": "6/20"
+    }
+  },
+  "tests": {
+    "test_IxHash_new.t": [
+      {
+        "test_num": 1,
+        "description": "new is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "new returns result with empty list",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "new returns result with single key-value pair",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "new returns result with multiple key-value pairs",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "new returns result with duplicate keys",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_NEXTKEY.t": [
+      {
+        "test_num": 1,
+        "description": "NEXTKEY is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "NEXTKEY returns first key",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "NEXTKEY returns first key again",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "NEXTKEY returns second key",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "NEXTKEY returns last key",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "NEXTKEY returns undef after last key",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "NEXTKEY returns undef for empty hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Values.t": [
+      {
+        "test_num": 1,
+        "description": "Values is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Values returns all values when no indices are provided",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Values returns all values when no indices are provided'\n# at t/generated/test_IxHash_Values.t line 20.\n# +-----+---------+\n# | GOT | CHECK   |\n# +-----+---------+\n# | 3   | <ARRAY> |\n# +-----+---------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Values returns all values when no indices are provided",
+          "line_number": "20",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_IxHash_Values.t",
+          "line": "20",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Values returns all values when no indices are provided'",
+            "# at t/generated/test_IxHash_Values.t line 20.",
+            "# +-----+---------+",
+            "# | GOT | CHECK   |",
+            "# +-----+---------+",
+            "# | 3   | <ARRAY> |",
+            "# +-----+---------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Values returns the value at the specified index",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Values returns the values at the specified indices",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Values returns the values at the specified indices'\n# at t/generated/test_IxHash_Values.t line 30.\n# +-----+---------+\n# | GOT | CHECK   |\n# +-----+---------+\n# | 3   | <ARRAY> |\n# +-----+---------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Values returns the values at the specified indices",
+          "line_number": "30",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_IxHash_Values.t",
+          "line": "30",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Values returns the values at the specified indices'",
+            "# at t/generated/test_IxHash_Values.t line 30.",
+            "# +-----+---------+",
+            "# | GOT | CHECK   |",
+            "# +-----+---------+",
+            "# | 3   | <ARRAY> |",
+            "# +-----+---------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Values returns undef for out-of-range index",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Shift2.t": [
+      {
+        "test_num": 1,
+        "description": "Shift2 is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Shift2 from empty hash returns undef",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Shift2 from empty hash returns undef'\n# at t/generated/test_IxHash_Shift2.t line 16.\n# +-----+----+---------+\n# | GOT | OP | CHECK   |\n# +-----+----+---------+\n# | 0   | IS | <UNDEF> |\n# +-----+----+---------+\nUndefined subroutine &main::is_deeply called at t/generated/test_IxHash_Shift2.t line 21.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #2.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Shift2 from empty hash returns undef",
+          "line_number": "21",
+          "expected": "IS",
+          "got": "#",
+          "file": "t/generated/test_IxHash_Shift2.t",
+          "line": "21",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Shift2 from empty hash returns undef'",
+            "# at t/generated/test_IxHash_Shift2.t line 16.",
+            "# +-----+----+---------+",
+            "# | GOT | OP | CHECK   |",
+            "# +-----+----+---------+",
+            "# | 0   | IS | <UNDEF> |",
+            "# +-----+----+---------+",
+            "Undefined subroutine &main::is_deeply called at t/generated/test_IxHash_Shift2.t line 21.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #2."
+          ],
+          "operator": "0",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_FETCH.t": [
+      {
+        "test_num": 1,
+        "description": "FETCH is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "FETCH returns value for existing key",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "FETCH returns undef for non-existing key",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "FETCH returns undef for empty hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_DELETE.t": [
+      {
+        "test_num": 1,
+        "description": "DELETE is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "DELETE returns value of deleted key",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "DELETE returns undef for non-existent key",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "DELETE returns value of last key",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "DELETE returns value of only key",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Pop.t": [
+      {
+        "test_num": 1,
+        "description": "Pop is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Pop returns undef on empty hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Pop returns correct key-value pair on hash with one element",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Pop returns correct key-value pair on hash with one element'\n# at t/generated/test_IxHash_Pop.t line 20.\n# +--------+---------+\n# | GOT    | CHECK   |\n# +--------+---------+\n# | value1 | <ARRAY> |\n# +--------+---------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Pop returns correct key-value pair on hash with one element",
+          "line_number": "20",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_IxHash_Pop.t",
+          "line": "20",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Pop returns correct key-value pair on hash with one element'",
+            "# at t/generated/test_IxHash_Pop.t line 20.",
+            "# +--------+---------+",
+            "# | GOT    | CHECK   |",
+            "# +--------+---------+",
+            "# | value1 | <ARRAY> |",
+            "# +--------+---------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Pop returns correct key-value pair on hash with multiple elements",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Pop returns correct key-value pair on hash with multiple elements'\n# at t/generated/test_IxHash_Pop.t line 25.\n# +--------+---------+\n# | GOT    | CHECK   |\n# +--------+---------+\n# | value3 | <ARRAY> |\n# +--------+---------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Pop returns correct key-value pair on hash with multiple elements",
+          "line_number": "25",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_IxHash_Pop.t",
+          "line": "25",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Pop returns correct key-value pair on hash with multiple elements'",
+            "# at t/generated/test_IxHash_Pop.t line 25.",
+            "# +--------+---------+",
+            "# | GOT    | CHECK   |",
+            "# +--------+---------+",
+            "# | value3 | <ARRAY> |",
+            "# +--------+---------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Pop returns correct key-value pair on hash with one element",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Pop returns correct key-value pair on hash with one element'\n# at t/generated/test_IxHash_Pop.t line 28.\n# +--------+---------+\n# | GOT    | CHECK   |\n# +--------+---------+\n# | value2 | <ARRAY> |\n# +--------+---------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Pop returns correct key-value pair on hash with one element",
+          "line_number": "28",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_IxHash_Pop.t",
+          "line": "28",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Pop returns correct key-value pair on hash with one element'",
+            "# at t/generated/test_IxHash_Pop.t line 28.",
+            "# +--------+---------+",
+            "# | GOT    | CHECK   |",
+            "# +--------+---------+",
+            "# | value2 | <ARRAY> |",
+            "# +--------+---------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Pop returns undef on empty hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_SortByValue.t": [
+      {
+        "test_num": 1,
+        "description": "SortByValue is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "SortByValue on empty hash succeeds",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "SortByValue on single-element hash succeeds",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "SortByValue on multi-element hash succeeds",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "SortByValue on hash with duplicate values succeeds",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Shift.t": [
+      {
+        "test_num": 1,
+        "description": "Shift is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Shift on empty hash returns undef",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Shift on hash with one element returns correct key-value pair",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Shift on hash with one element returns correct key-value pair'\n# at t/generated/test_IxHash_Shift.t line 26.\n# +--------+---------+\n# | GOT    | CHECK   |\n# +--------+---------+\n# | value1 | <ARRAY> |\n# +--------+---------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Shift on hash with one element returns correct key-value pair",
+          "line_number": "26",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_IxHash_Shift.t",
+          "line": "26",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Shift on hash with one element returns correct key-value pair'",
+            "# at t/generated/test_IxHash_Shift.t line 26.",
+            "# +--------+---------+",
+            "# | GOT    | CHECK   |",
+            "# +--------+---------+",
+            "# | value1 | <ARRAY> |",
+            "# +--------+---------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Shift on hash with multiple elements returns correct key-value pair",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Shift on hash with multiple elements returns correct key-value pair'\n# at t/generated/test_IxHash_Shift.t line 35.\n# +--------+---------+\n# | GOT    | CHECK   |\n# +--------+---------+\n# | value1 | <ARRAY> |\n# +--------+---------+\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #2.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Shift on hash with multiple elements returns correct key-value pair",
+          "line_number": "35",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_IxHash_Shift.t",
+          "line": "35",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Shift on hash with multiple elements returns correct key-value pair'",
+            "# at t/generated/test_IxHash_Shift.t line 35.",
+            "# +--------+---------+",
+            "# | GOT    | CHECK   |",
+            "# +--------+---------+",
+            "# | value1 | <ARRAY> |",
+            "# +--------+---------+",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #2."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash__lrange.t": [
+      {
+        "test_num": 1,
+        "description": "_lrange is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Undefined offset returns undef",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_IxHash__lrange.t .. \nok 1 - _lrange is defined\nok 2 - Undefined offset returns undef\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 2 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_IxHash__lrange.t (Wstat: 65280 Tests: 2 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=2,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.09 cusr  0.01 csys =  0.11 CPU)\nResult: FAIL\nCan't use string (\"0\") as an ARRAY ref while \"strict refs\" in use at t/generated/test_IxHash__lrange.t line 21.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #2.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_IxHash__lrange.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Unshift2.t": [
+      {
+        "test_num": 1,
+        "description": "Unshift2 is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Unshift2 returns 0 with empty input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Unshift2 returns correct count with non-empty input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Unshift2 returns correct count with duplicate keys",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Unshift2 returns correct count with duplicate keys'\n# at t/generated/test_IxHash_Unshift2.t line 25.\n# +-----+----+-------+\n# | GOT | OP | CHECK |\n# +-----+----+-------+\n# | 2   | eq | 1     |\n# +-----+----+-------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Unshift2 returns correct count with duplicate keys",
+          "line_number": "25",
+          "expected": "eq",
+          "got": "#",
+          "file": "t/generated/test_IxHash_Unshift2.t",
+          "line": "25",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Unshift2 returns correct count with duplicate keys'",
+            "# at t/generated/test_IxHash_Unshift2.t line 25.",
+            "# +-----+----+-------+",
+            "# | GOT | OP | CHECK |",
+            "# +-----+----+-------+",
+            "# | 2   | eq | 1     |",
+            "# +-----+----+-------+"
+          ],
+          "operator": "2",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Unshift2 returns correct count with new keys",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Reorder.t": [
+      {
+        "test_num": 1,
+        "description": "Reorder is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Reorder returns undef with empty input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Reorder returns result with existing keys",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Reorder correct order with existing keys",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Reorder correct values with existing keys",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Reorder returns result with non-existing keys",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Reorder correct order with non-existing keys",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Reorder correct values with non-existing keys",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 9,
+        "description": "Reorder returns result with duplicate keys",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 10,
+        "description": "Reorder correct order with duplicate keys",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Reorder correct order with duplicate keys'\n# at t/generated/test_IxHash_Reorder.t line 33.\n# +------+-----+---------+------------------+\n# | PATH | GOT | OP      | CHECK            |\n# +------+-----+---------+------------------+\n# | [1]  | b   | eq      | c                |\n# | [2]  | c   | !exists | <DOES NOT EXIST> |\n# +------+-----+---------+------------------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Reorder correct order with duplicate keys",
+          "line_number": "33",
+          "expected": "b",
+          "got": "#",
+          "file": "t/generated/test_IxHash_Reorder.t",
+          "line": "33",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Reorder correct order with duplicate keys'",
+            "# at t/generated/test_IxHash_Reorder.t line 33.",
+            "# +------+-----+---------+------------------+",
+            "# | PATH | GOT | OP      | CHECK            |",
+            "# +------+-----+---------+------------------+",
+            "# | [1]  | b   | eq      | c                |",
+            "# | [2]  | c   | !exists | <DOES NOT EXIST> |",
+            "# +------+-----+---------+------------------+"
+          ],
+          "operator": "[1]",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 11,
+        "description": "Reorder correct values with duplicate keys",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Reorder correct values with duplicate keys'\n# at t/generated/test_IxHash_Reorder.t line 34.\n# +------+-----+---------+------------------+\n# | PATH | GOT | OP      | CHECK            |\n# +------+-----+---------+------------------+\n# | [1]  | 2   | eq      | 3                |\n# | [2]  | 3   | !exists | <DOES NOT EXIST> |\n# +------+-----+---------+------------------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Reorder correct values with duplicate keys",
+          "line_number": "34",
+          "expected": "2",
+          "got": "#",
+          "file": "t/generated/test_IxHash_Reorder.t",
+          "line": "34",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Reorder correct values with duplicate keys'",
+            "# at t/generated/test_IxHash_Reorder.t line 34.",
+            "# +------+-----+---------+------------------+",
+            "# | PATH | GOT | OP      | CHECK            |",
+            "# +------+-----+---------+------------------+",
+            "# | [1]  | 2   | eq      | 3                |",
+            "# | [2]  | 3   | !exists | <DOES NOT EXIST> |",
+            "# +------+-----+---------+------------------+"
+          ],
+          "operator": "[1]",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Delete_c2.t": [
+      {
+        "test_num": 1,
+        "description": "Delete is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Delete existing keys",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Delete non-existing keys",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Delete empty list",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Delete with less than 4 keys",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Length.t": [
+      {
+        "test_num": 1,
+        "description": "Length is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Length of empty hash is 0",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Length of hash with one element is 1",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Length of hash with multiple elements is 3",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Length function crashed on invalid input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Unshift.t": [
+      {
+        "test_num": 1,
+        "description": "Unshift is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Added 2 key-value pairs to an empty hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Added 2 key-value pairs to a non-empty hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Updated an existing key-value pair",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Added a duplicate key-value pair",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_FIRSTKEY.t": [
+      {
+        "test_num": 1,
+        "description": "FIRSTKEY is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "FIRSTKEY returns undef on empty hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "FIRSTKEY returns first key on non-empty hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "FIRSTKEY returns single key on hash with single element",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Replace.t": [
+      {
+        "test_num": 1,
+        "description": "Replace is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Replace returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Replace with new key and value",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Replace returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Replace with new value only",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Replace returns undef for out of range index",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Replace with out of range index",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Replace returns undef for undefined index",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 9,
+        "description": "Replace with undefined index",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Pop2.t": [
+      {
+        "test_num": 1,
+        "description": "Pop2 is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Pop2 from empty hash returns undef",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Pop2 from empty hash returns undef'\n# at t/generated/test_IxHash_Pop2.t line 16.\n# +-----+----+---------+\n# | GOT | OP | CHECK   |\n# +-----+----+---------+\n# | 0   | IS | <UNDEF> |\n# +-----+----+---------+\nUndefined subroutine &main::is_deeply called at t/generated/test_IxHash_Pop2.t line 20.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #2.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Pop2 from empty hash returns undef",
+          "line_number": "20",
+          "expected": "IS",
+          "got": "#",
+          "file": "t/generated/test_IxHash_Pop2.t",
+          "line": "20",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Pop2 from empty hash returns undef'",
+            "# at t/generated/test_IxHash_Pop2.t line 16.",
+            "# +-----+----+---------+",
+            "# | GOT | OP | CHECK   |",
+            "# +-----+----+---------+",
+            "# | 0   | IS | <UNDEF> |",
+            "# +-----+----+---------+",
+            "Undefined subroutine &main::is_deeply called at t/generated/test_IxHash_Pop2.t line 20.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #2."
+          ],
+          "operator": "0",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Keys.t": [
+      {
+        "test_num": 1,
+        "description": "Keys is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Single index returns correct key",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Multiple indices return correct keys",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Multiple indices return correct keys'\n# at t/generated/test_IxHash_Keys.t line 21.\n# +-----+---------+\n# | GOT | CHECK   |\n# +-----+---------+\n# | b   | <ARRAY> |\n# +-----+---------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Multiple indices return correct keys",
+          "line_number": "21",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_IxHash_Keys.t",
+          "line": "21",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Multiple indices return correct keys'",
+            "# at t/generated/test_IxHash_Keys.t line 21.",
+            "# +-----+---------+",
+            "# | GOT | CHECK   |",
+            "# +-----+---------+",
+            "# | b   | <ARRAY> |",
+            "# +-----+---------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "No indices return all keys",
+        "status": "not ok",
+        "diagnostics": "Failed test 'No indices return all keys'\n# at t/generated/test_IxHash_Keys.t line 24.\n# +-----+---------+\n# | GOT | CHECK   |\n# +-----+---------+\n# | 2   | <ARRAY> |\n# +-----+---------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "No indices return all keys",
+          "line_number": "24",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_IxHash_Keys.t",
+          "line": "24",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'No indices return all keys'",
+            "# at t/generated/test_IxHash_Keys.t line 24.",
+            "# +-----+---------+",
+            "# | GOT | CHECK   |",
+            "# +-----+---------+",
+            "# | 2   | <ARRAY> |",
+            "# +-----+---------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Out-of-range index returns undef",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Non-integer index returns undef",
+        "status": "not ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Push.t": [
+      {
+        "test_num": 1,
+        "description": "Push is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Push returns 0 with empty list",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Push returns 1 with single key-value pair",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Push returns 3 with multiple key-value pairs",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Push returns 3 with duplicate key",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Push returns result with invalid input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Push2.t": [
+      {
+        "test_num": 1,
+        "description": "Push2 is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Push2 returns 0 with empty input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Push2 returns 1 with single key-value pair",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Push2 returns 3 with multiple key-value pairs",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Push2 crashes with invalid input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Clear.t": [
+      {
+        "test_num": 1,
+        "description": "Clear is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Clear function returns no result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_IxHash_Clear.t .. \nok 1 - Clear is defined\nok 2 - Clear function returns no result\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 2 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_IxHash_Clear.t (Wstat: 65280 Tests: 2 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=2,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nUndefined subroutine &main::is_deeply called at t/generated/test_IxHash_Clear.t line 20.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #2.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_IxHash_Clear.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_SortByKey.t": [
+      {
+        "test_num": 1,
+        "description": "SortByKey is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "SortByKey on empty IxHash succeeds",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "SortByKey on single-element IxHash succeeds",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "SortByKey on multi-element IxHash succeeds",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "SortByKey on IxHash with non-comparable keys succeeds",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_EXISTS.t": [
+      {
+        "test_num": 1,
+        "description": "EXISTS is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Key does not exist in the hash",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Key does not exist in the hash'\n# at t/generated/test_IxHash_EXISTS.t line 15.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Key does not exist in the hash",
+          "line_number": "15",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_IxHash_EXISTS.t",
+          "line": "15",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Key does not exist in the hash'",
+            "# at t/generated/test_IxHash_EXISTS.t line 15."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Key exists in the hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Key does not exist in the hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Key is not provided",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Indexed hash object is not properly initialized",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Indices.t": [
+      {
+        "test_num": 1,
+        "description": "Indices is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Single key returns correct value",
+        "status": "not ok",
+        "diagnostics": "at t/generated/test_IxHash_Indices.t line 19.\n+-----+----+--------+\n| GOT | OP | CHECK  |\n+-----+----+--------+\n| 0   | eq | value1 |\n+-----+----+--------+",
+        "error_details": {
+          "error_type": "unknown",
+          "error_message": null,
+          "expected": "value1",
+          "actual": null,
+          "failed_test_name": null,
+          "perl_errors": [],
+          "comparison_failure": false,
+          "got": "0",
+          "file": null,
+          "line": null,
+          "exception": null,
+          "raw_diagnostics": [
+            "at t/generated/test_IxHash_Indices.t line 19.",
+            "+-----+----+--------+",
+            "| GOT | OP | CHECK  |",
+            "+-----+----+--------+",
+            "| 0   | eq | value1 |",
+            "+-----+----+--------+"
+          ],
+          "operator": "eq",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_TIEHASH.t": [
+      {
+        "test_num": 1,
+        "description": "TIEHASH is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result with key-value pairs",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Object is a Tie::IxHash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "First element is a hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Second element is an array",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Third element is an array",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Fourth element is an iteration count",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_STORE.t": [
+      {
+        "test_num": 1,
+        "description": "STORE is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "STORE succeeds",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "STORE updates existing key",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "STORE succeeds",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "STORE succeeds",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Keys are in the correct order",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Values are in the correct order",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_IxHash_Splice.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_IxHash_Splice.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_IxHash_Splice.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.08 cusr  0.02 csys =  0.11 CPU)\nResult: FAIL\nGlobal symbol \"@result\" requires explicit package name (did you forget to declare \"my @result\"?) at t/generated/test_IxHash_Splice.t line 22.\nGlobal symbol \"@result\" requires explicit package name (did you forget to declare \"my @result\"?) at t/generated/test_IxHash_Splice.t line 23.\nExecution of t/generated/test_IxHash_Splice.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_IxHash_Splice.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ]
+  },
+  "metadata": {
+    "test_framework": "Test2::V0",
+    "parsing_enhanced": true,
+    "diagnostic_features": [
+      "enhanced_error_reporting",
+      "structured_diagnostics",
+      "better_comparison_output",
+      "exception_capture",
+      "comparison_table_extraction"
+    ]
+  }
+}

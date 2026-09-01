@@ -1,0 +1,25 @@
+use Test2::V0 -no_srand => 1;
+use strict;
+use warnings;
+use Test2::Mock qw/mock/;
+use File::Temp qw/tempfile tempdir/;
+use File::Spec;
+use lib '.';
+BEGIN { require Path::Class::Entity; }
+
+my $symbol_check = eval { no strict 'refs'; defined &{"Path::Class::Entity::_spec_class"} };
+if ($@) { fail('Symbol check crashed: ' . $@); } else { ok($symbol_check, '_spec_class is defined'); }
+
+my $result = eval { Path::Class::Entity::_spec_class('Path::Class::Entity', 'Unix') };
+if ($@) { fail('Function crashed: ' . $@); } else { is($result, 'File::Spec::Unix', 'Returns correct class for Unix'); }
+
+$result = eval { Path::Class::Entity::_spec_class('Path::Class::Entity', 'Invalid') };
+if ($@) { like($@, qr/Invalid system type/, 'Dies with correct error message for invalid type'); } else { fail('Expected function to die for invalid type'); }
+
+$result = eval { Path::Class::Entity::_spec_class('Path::Class::Entity', '') };
+if ($@) { like($@, qr/Invalid system type/, 'Dies with correct error message for empty type'); } else { fail('Expected function to die for empty type'); }
+
+$result = eval { Path::Class::Entity::_spec_class('Path::Class::Entity', 'Unix; system("rm -rf *")') };
+if ($@) { like($@, qr/Invalid system type/, 'Dies with correct error message for tainted type'); } else { fail('Expected function to die for tainted type'); }
+
+done_testing();

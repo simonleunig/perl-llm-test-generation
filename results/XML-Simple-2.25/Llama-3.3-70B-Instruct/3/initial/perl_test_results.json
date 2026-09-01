@@ -1,0 +1,3032 @@
+{
+  "summary": {
+    "total_files": 43,
+    "total_tests": 216,
+    "passed": 164,
+    "failed": 52,
+    "test2_framework": "Test2::V0",
+    "enhanced_diagnostics": {
+      "test2_enhanced_failures": 52,
+      "error_type_breakdown": {
+        "test_failure": 35,
+        "unknown": 16,
+        "no_output": 1
+      },
+      "diagnostic_coverage": "52/52",
+      "comparison_tables": 9,
+      "structured_failures": "9/52"
+    }
+  },
+  "tests": {
+    "test_Simple_die_or_warn.t": [
+      {
+        "test_num": 1,
+        "description": "die_or_warn is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "die_or_warn dies with error message when strictmode is enabled",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Simple_die_or_warn.t .. \nok 1 - die_or_warn is defined\nok 2 - die_or_warn dies with error message when strictmode is enabled\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 2 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Simple_die_or_warn.t (Wstat: 65280 Tests: 2 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=2,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\n'warnings' does not look like a package name, and is not a valid control method at t/generated/test_Simple_die_or_warn.t line 27.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #2.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Simple_die_or_warn.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_storable_filename.t": [
+      {
+        "test_num": 1,
+        "description": "storable_filename is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "storable_filename with .xml extension",
+        "status": "not ok",
+        "diagnostics": "Failed test 'storable_filename with .xml extension'\n# at t/generated/test_Simple_storable_filename.t line 16.\n# +--------------+----+------------------+\n# | GOT          | OP | CHECK            |\n# +--------------+----+------------------+\n# | example.stor | eq | example.xml.stor |\n# +--------------+----+------------------+\nUse of uninitialized value $cachefile in substitution (s///) at XML/Simple.pm line 527.\nUse of uninitialized value $cachefile in substitution (s///) at XML/Simple.pm line 527.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "storable_filename with .xml extension",
+          "line_number": "16",
+          "expected": "eq",
+          "got": "#",
+          "file": "XML/Simple.pm",
+          "line": "527",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'storable_filename with .xml extension'",
+            "# at t/generated/test_Simple_storable_filename.t line 16.",
+            "# +--------------+----+------------------+",
+            "# | GOT          | OP | CHECK            |",
+            "# +--------------+----+------------------+",
+            "# | example.stor | eq | example.xml.stor |",
+            "# +--------------+----+------------------+",
+            "Use of uninitialized value $cachefile in substitution (s///) at XML/Simple.pm line 527.",
+            "Use of uninitialized value $cachefile in substitution (s///) at XML/Simple.pm line 527."
+          ],
+          "operator": "example.stor",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "storable_filename without .xml extension",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "storable_filename with undef input",
+        "status": "not ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_collapse_content.t": [
+      {
+        "test_num": 1,
+        "description": "collapse_content is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "collapse_content collapses nested elements correctly",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Simple_collapse_content.t .. \nok 1 - collapse_content is defined\nok 2 - Function returns result\nok 3 - collapse_content collapses nested elements correctly\nok 4 - Function returns result\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 4 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Simple_collapse_content.t (Wstat: 65280 Tests: 4 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=4,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.09 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nUndefined subroutine &main::is_deeply called at t/generated/test_Simple_collapse_content.t line 25.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #4.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Simple_collapse_content.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_collapse.t": [
+      {
+        "test_num": 1,
+        "description": "collapse is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result for empty hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result for hash with single key-value pair",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result for hash with multiple key-value pairs",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result for hash with nested elements",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result for hash with array reference",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Function returns result for variable substitution",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple__get_object.t": [
+      {
+        "test_num": 1,
+        "description": "_get_object is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result with existing object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Returned object is the same as the input object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result without input object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "XML::Simple=HASH->isa(...)",
+        "status": "not ok",
+        "diagnostics": "Failed test 'XML::Simple=HASH->isa(...)'\n# at t/generated/test_Simple__get_object.t line 23.\nFailed: XML::Simple=HASH->isa('Returned object is an instance of XML::Simple')",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "XML::Simple=HASH->isa(...)",
+          "line_number": "23",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple__get_object.t",
+          "line": "23",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'XML::Simple=HASH->isa(...)'",
+            "# at t/generated/test_Simple__get_object.t line 23.",
+            "Failed: XML::Simple=HASH->isa('Returned object is an instance of XML::Simple')"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result with invalid object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "XML::Simple=HASH->isa(...)",
+        "status": "not ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_default_config_file.t": [
+      {
+        "test_num": 1,
+        "description": "default_config_file is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Result is an XML file name",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Simple_default_config_file.t .. \nok 1 - default_config_file is defined\nok 2 - Function returns result\nok 3 - Result is an XML file name\nok 4 - Function returns result\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 4 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Simple_default_config_file.t (Wstat: 65280 Tests: 4 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=4,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nUndefined subroutine &main::is_deeply called at t/generated/test_Simple_default_config_file.t line 29.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #4.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Simple_default_config_file.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_cache_write_memcopy.t": [
+      {
+        "test_num": 1,
+        "description": "cache_write_memcopy is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "cache_write_memcopy succeeds",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Simple_cache_write_memcopy.t .. \nok 1 - cache_write_memcopy is defined\nok 2 - cache_write_memcopy succeeds\nDubious, test returned 2 (wstat 512, 0x200)\nAll 2 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Simple_cache_write_memcopy.t (Wstat: 512 Tests: 2 Failed: 0)\n  Non-zero exit status: 2\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=2,  1 wallclock secs ( 0.01 usr  0.01 sys +  0.10 cusr  0.02 csys =  0.14 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Simple_cache_write_memcopy.t line 22.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 2 after test #2.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Simple_cache_write_memcopy.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_import.t": [
+      {
+        "test_num": 1,
+        "description": "import is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "import with :strict returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "import without :strict returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function crashed: \"other_symbol\" is not exported by the XML::Simple module",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: \"other_symbol\" is not exported by the XML::Simple module\n# Can't continue after import errors at t/generated/test_Simple_import.t line 23.\n'\n# at t/generated/test_Simple_import.t line 24.",
+        "error_details": {
+          "error_type": "test_failure",
+          "line_number": "24",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_import.t",
+          "line": "24",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: \"other_symbol\" is not exported by the XML::Simple module",
+            "# Can't continue after import errors at t/generated/test_Simple_import.t line 23.",
+            "'",
+            "# at t/generated/test_Simple_import.t line 24."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function crashed: \"other_symbol\" is not exported by the XML::Simple module",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: \"other_symbol\" is not exported by the XML::Simple module\n# Can't continue after import errors at t/generated/test_Simple_import.t line 27.\n'\n# at t/generated/test_Simple_import.t line 28.",
+        "error_details": {
+          "error_type": "test_failure",
+          "line_number": "28",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_import.t",
+          "line": "28",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: \"other_symbol\" is not exported by the XML::Simple module",
+            "# Can't continue after import errors at t/generated/test_Simple_import.t line 27.",
+            "'",
+            "# at t/generated/test_Simple_import.t line 28."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          "Can't continue after import errors at t/generated/test_Simple_import.t line 23.",
+          " "
+        ]
+      }
+    ],
+    "test_Simple_escape_value.t": [
+      {
+        "test_num": 1,
+        "description": "escape_value is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "escape_value returns empty string for undefined input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "escape_value returns empty string for empty input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "escape_value escapes special characters",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "escape_value calls numeric_escape with numeric escape option",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_build_tree.t": [
+      {
+        "test_num": 1,
+        "description": "build_tree is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result with valid XML file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result with valid XML string",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function raises error with invalid XML file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function raises error with invalid XML string",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function raises error with non-existent XML file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Function raises error with empty XML string",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_normalise_space.t": [
+      {
+        "test_num": 1,
+        "description": "normalise_space is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Empty string returns empty string",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "String with only whitespace characters returns empty string",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "String with leading and trailing whitespace characters is normalized correctly",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "String with multiple consecutive whitespace characters is normalized correctly",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "String without any whitespace characters is not modified",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_start_element.t": [
+      {
+        "test_num": 1,
+        "description": "start_element is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_escape_attr.t": [
+      {
+        "test_num": 1,
+        "description": "escape_attr is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "escape_attr returns result on empty string",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "escape_attr returns result on whitespace string",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "escape_attr returns result on string with special characters",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "escape_attr returns undefined on non-scalar input",
+        "status": "not ok",
+        "diagnostics": "Failed test 'escape_attr returns undefined on non-scalar input'\n# at t/generated/test_Simple_escape_attr.t line 28.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #5.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "escape_attr returns undefined on non-scalar input",
+          "line_number": "28",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_escape_attr.t",
+          "line": "28",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'escape_attr returns undefined on non-scalar input'",
+            "# at t/generated/test_Simple_escape_attr.t line 28.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #5."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_cache_read_memcopy.t": [
+      {
+        "test_num": 1,
+        "description": "cache_read_memcopy is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "cache_read_memcopy returns result",
+        "status": "not ok",
+        "diagnostics": "Failed test 'cache_read_memcopy returns result'\n# at t/generated/test_Simple_cache_read_memcopy.t line 19.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "cache_read_memcopy returns result",
+          "line_number": "19",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_cache_read_memcopy.t",
+          "line": "19",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'cache_read_memcopy returns result'",
+            "# at t/generated/test_Simple_cache_read_memcopy.t line 19."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "cache_read_memcopy returns correct cache",
+        "status": "not ok",
+        "diagnostics": "Failed test 'cache_read_memcopy returns correct cache'\n# at t/generated/test_Simple_cache_read_memcopy.t line 20.\n# +---------+--------+\n# | GOT     | CHECK  |\n# +---------+--------+\n# | <UNDEF> | <HASH> |\n# +---------+--------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "cache_read_memcopy returns correct cache",
+          "line_number": "20",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_cache_read_memcopy.t",
+          "line": "20",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'cache_read_memcopy returns correct cache'",
+            "# at t/generated/test_Simple_cache_read_memcopy.t line 20.",
+            "# +---------+--------+",
+            "# | GOT     | CHECK  |",
+            "# +---------+--------+",
+            "# | <UNDEF> | <HASH> |",
+            "# +---------+--------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "cache_read_memcopy returns undef for invalid cache",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "cache_read_memcopy returns undef for non-existent cache",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_get_var.t": [
+      {
+        "test_num": 1,
+        "description": "get_var is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "get_var returns existing variable value",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "get_var returns ${name} for nonexistent variable",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "get_var returns existing variable value with word characters and dots",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "get_var returns ${name} for variable with invalid characters",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_build_simple_tree.t": [
+      {
+        "test_num": 1,
+        "description": "build_simple_tree is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function crashed: Couldn't open <root><person><name>John</name><age>30</age></person></root>:",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Couldn't open <root><person><name>John</name><age>30</age></person></root>:\nNo such file or directory at /usr/local/share/perl5/XML/SAX/Expat.pm line 75.\n# XML::Simple called at t/generated/test_Simple_build_simple_tree.t line 16.\n'\n# at t/generated/test_Simple_build_simple_tree.t line 17.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Couldn",
+          "line_number": "17",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_build_simple_tree.t",
+          "line": "17",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Couldn't open <root><person><name>John</name><age>30</age></person></root>:",
+            "No such file or directory at /usr/local/share/perl5/XML/SAX/Expat.pm line 75.",
+            "# XML::Simple called at t/generated/test_Simple_build_simple_tree.t line 16.",
+            "'",
+            "# at t/generated/test_Simple_build_simple_tree.t line 17."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function crashed with keeproot: Couldn't open <root><person><name>John</name><age>30</age></person></root>:",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed with keeproot: Couldn't open <root><person><name>John</name><age>30</age></person></root>:\nNo such file or directory at /usr/local/share/perl5/XML/SAX/Expat.pm line 75.\n# XML::Simple called at t/generated/test_Simple_build_simple_tree.t line 21.\n'\n# at t/generated/test_Simple_build_simple_tree.t line 22.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed with keeproot: Couldn",
+          "line_number": "22",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_build_simple_tree.t",
+          "line": "22",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed with keeproot: Couldn't open <root><person><name>John</name><age>30</age></person></root>:",
+            "No such file or directory at /usr/local/share/perl5/XML/SAX/Expat.pm line 75.",
+            "# XML::Simple called at t/generated/test_Simple_build_simple_tree.t line 21.",
+            "'",
+            "# at t/generated/test_Simple_build_simple_tree.t line 22."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          "No such file or directory at /usr/local/share/perl5/XML/SAX/Expat.pm line 75.",
+          "XML::Simple called at t/generated/test_Simple_build_simple_tree.t line 16.",
+          " "
+        ]
+      },
+      {
+        "test_num": 4,
+        "description": "Function crashed with invalid XML: Couldn't open <root><person><name>John</name><age>30</age>:",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          "No such file or directory at /usr/local/share/perl5/XML/SAX/Expat.pm line 75.",
+          "XML::Simple called at t/generated/test_Simple_build_simple_tree.t line 21.",
+          " "
+        ]
+      },
+      {
+        "test_num": 5,
+        "description": "Function crashed with empty XML: No _parse_* routine defined on this driver (If it is a filter, remember to set the Parent property. If you call the parse() method, make sure to set a Source. You may want to call parse_uri, parse_string or parse_file instead.) [XML::SAX::Expat=HASH(0x64b3c67abae8)] at /usr/local/share/perl5/XML/SAX/Base.pm line 2616.",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          "No such file or directory at /usr/local/share/perl5/XML/SAX/Expat.pm line 75.",
+          "XML::Simple called at t/generated/test_Simple_build_simple_tree.t line 21.",
+          " ",
+          "No such file or directory at /usr/local/share/perl5/XML/SAX/Expat.pm line 75.",
+          "XML::Simple called at t/generated/test_Simple_build_simple_tree.t line 26.",
+          " "
+        ]
+      }
+    ],
+    "test_Simple_parse_file.t": [
+      {
+        "test_num": 1,
+        "description": "parse_file is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result with valid XML file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function throws error with invalid XML file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function throws error with non-existent file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result with cache option",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_hash_to_array.t": [
+      {
+        "test_num": 1,
+        "description": "hash_to_array is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 1779.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 1779.\n'\n# at t/generated/test_Simple_hash_to_array.t line 17.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "17",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_hash_to_array.t",
+          "line": "17",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 1779.",
+            "'",
+            "# at t/generated/test_Simple_hash_to_array.t line 17."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 1779.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 1779.\n'\n# at t/generated/test_Simple_hash_to_array.t line 22.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "22",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_hash_to_array.t",
+          "line": "22",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 1779.",
+            "'",
+            "# at t/generated/test_Simple_hash_to_array.t line 22."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 4,
+        "description": "Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 1779.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 1779.\n'\n# at t/generated/test_Simple_hash_to_array.t line 27.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #4.\nUse of uninitialized value in numeric eq (==) at XML/Simple.pm line 1025.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "27",
+          "expected": null,
+          "got": null,
+          "file": "XML/Simple.pm",
+          "line": "1025",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 1779.",
+            "'",
+            "# at t/generated/test_Simple_hash_to_array.t line 27.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #4.",
+            "Use of uninitialized value in numeric eq (==) at XML/Simple.pm line 1025."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      }
+    ],
+    "test_Simple_end_element.t": [
+      {
+        "test_num": 1,
+        "description": "end_element is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "end_element updates curlist",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "end_element handles empty lists",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "end_element updates curlist",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_end_document.t": [
+      {
+        "test_num": 1,
+        "description": "end_document is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "end_document returns result with nocollapse",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "end_document crashed with keeproot: Not an ARRAY reference at XML/Simple.pm line 1061.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'end_document crashed with keeproot: Not an ARRAY reference at XML/Simple.pm line 1061.\n'\n# at t/generated/test_Simple_end_document.t line 26.",
+        "error_details": {
+          "error_type": "test_failure",
+          "line_number": "26",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_end_document.t",
+          "line": "26",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'end_document crashed with keeproot: Not an ARRAY reference at XML/Simple.pm line 1061.",
+            "'",
+            "# at t/generated/test_Simple_end_document.t line 26."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "end_document crashed with datahandler: Not an ARRAY reference at XML/Simple.pm line 1908.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'end_document crashed with datahandler: Not an ARRAY reference at XML/Simple.pm line 1908.\n'\n# at t/generated/test_Simple_end_document.t line 33.",
+        "error_details": {
+          "error_type": "test_failure",
+          "line_number": "33",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_end_document.t",
+          "line": "33",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'end_document crashed with datahandler: Not an ARRAY reference at XML/Simple.pm line 1908.",
+            "'",
+            "# at t/generated/test_Simple_end_document.t line 33."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 5,
+        "description": "end_document crashed without options: Not an ARRAY reference at XML/Simple.pm line 1908.",
+        "status": "not ok",
+        "diagnostics": " ",
+        "error_details": {
+          "error_type": "unknown",
+          "expected": null,
+          "got": null,
+          "file": null,
+          "line": null,
+          "exception": null,
+          "raw_diagnostics": [
+            " "
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      }
+    ],
+    "test_Simple_new_hashref.t": [
+      {
+        "test_num": 1,
+        "description": "new_hashref is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result with no arguments",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Result is a hash reference with no arguments",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result with arguments",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Result is a hash reference with arguments",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Simple_new_hashref.t .. \nok 1 - new_hashref is defined\nok 2 - Function returns result with no arguments\nok 3 - Result is a hash reference with no arguments\nok 4 - Function returns result with arguments\nok 5 - Result is a hash reference with arguments\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 5 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Simple_new_hashref.t (Wstat: 65280 Tests: 5 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=5,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nUndefined subroutine &main::is_deeply called at t/generated/test_Simple_new_hashref.t line 23.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #5.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Simple_new_hashref.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_find_xml_file.t": [
+      {
+        "test_num": 1,
+        "description": "find_xml_file is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function crashed: fileparse(): need a valid pathname at XML/Simple.pm line 964.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: fileparse(): need a valid pathname at XML/Simple.pm line 964.\n'\n# at t/generated/test_Simple_find_xml_file.t line 19.",
+        "error_details": {
+          "error_type": "test_failure",
+          "line_number": "19",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_find_xml_file.t",
+          "line": "19",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: fileparse(): need a valid pathname at XML/Simple.pm line 964.",
+            "'",
+            "# at t/generated/test_Simple_find_xml_file.t line 19."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "File found in search path",
+        "status": "not ok",
+        "diagnostics": "Failed test 'File found in search path'\n# at t/generated/test_Simple_find_xml_file.t line 29.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "File found in search path",
+          "line_number": "29",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_find_xml_file.t",
+          "line": "29",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'File found in search path'",
+            "# at t/generated/test_Simple_find_xml_file.t line 29."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 4,
+        "description": "File not found error",
+        "status": "not ok",
+        "diagnostics": "Failed test 'File not found error'\n# at t/generated/test_Simple_find_xml_file.t line 35.\n# +---------------------------------+----+---------------------------------+\n# | GOT                             | OP | CHECK                           |\n# +---------------------------------+----+---------------------------------+\n# | fileparse(): need a valid pathn | =~ | (?^:Could not find nonexistent\\ |\n# | ame at XML/Simple.pm line 964.\\ |    | .xml)                           |\n# | n                               |    |                                 |\n# +---------------------------------+----+---------------------------------+\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 2 after test #4.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "File not found error",
+          "line_number": "35",
+          "expected": "=~",
+          "got": "#",
+          "file": "XML/Simple.pm",
+          "line": "964",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'File not found error'",
+            "# at t/generated/test_Simple_find_xml_file.t line 35.",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | GOT                             | OP | CHECK                           |",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | fileparse(): need a valid pathn | =~ | (?^:Could not find nonexistent\\ |",
+            "# | ame at XML/Simple.pm line 964.\\ |    | .xml)                           |",
+            "# | n                               |    |                                 |",
+            "# +---------------------------------+----+---------------------------------+",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 2 after test #4."
+          ],
+          "operator": "fileparse(): need a valid pathn",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_build_tree_xml_parser.t": [
+      {
+        "test_num": 1,
+        "description": "build_tree_xml_parser is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result from file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function crashed: Can't use string (\"<root><person><name>John</name><\"...) as a SCALAR ref while \"strict refs\" in use at XML/Simple.pm line 439.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't use string (\"<root><person><name>John</name><\"...) as a SCALAR ref while \"strict refs\" in use at XML/Simple.pm line 439.\n'\n# at t/generated/test_Simple_build_tree_xml_parser.t line 26.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #3.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "26",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_build_tree_xml_parser.t",
+          "line": "26",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't use string (\"<root><person><name>John</name><\"...) as a SCALAR ref while \"strict refs\" in use at XML/Simple.pm line 439.",
+            "'",
+            "# at t/generated/test_Simple_build_tree_xml_parser.t line 26.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #3."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_parse_string.t": [
+      {
+        "test_num": 1,
+        "description": "parse_string is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result for valid XML string",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function crashes for invalid XML string",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function crashes for empty XML string",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result for XML string with options",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_numeric_escape.t": [
+      {
+        "test_num": 1,
+        "description": "numeric_escape is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result with default options",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Result matches expected output with default options",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result with numericescape option set to 2",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Result matches expected output with numericescape option set to 2",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result with non-ASCII characters",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Result matches expected output with non-ASCII characters",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Result matches expected output with non-ASCII characters'\n# at t/generated/test_Simple_numeric_escape.t line 31.\nUnicode::GCString is not installed, table may not display all unicode characters properly\n# +---------------+----+--------------------+\n# | GOT           | OP | CHECK              |\n# +---------------+----+--------------------+\n# | H\u00ebllo, world! | eq | H&#235;llo, world! |\n# +---------------+----+--------------------+\nUse of uninitialized value $data in substitution (s///) at XML/Simple.pm line 1741.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Result matches expected output with non-ASCII characters",
+          "line_number": "31",
+          "expected": "eq",
+          "got": "#",
+          "file": "XML/Simple.pm",
+          "line": "1741",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Result matches expected output with non-ASCII characters'",
+            "# at t/generated/test_Simple_numeric_escape.t line 31.",
+            "Unicode::GCString is not installed, table may not display all unicode characters properly",
+            "# +---------------+----+--------------------+",
+            "# | GOT           | OP | CHECK              |",
+            "# +---------------+----+--------------------+",
+            "# | H\u00ebllo, world! | eq | H&#235;llo, world! |",
+            "# +---------------+----+--------------------+",
+            "Use of uninitialized value $data in substitution (s///) at XML/Simple.pm line 1741."
+          ],
+          "operator": "H\u00ebllo, world!",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Function returns result with undefined input",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function returns result with undefined input'\n# at t/generated/test_Simple_numeric_escape.t line 35.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function returns result with undefined input",
+          "line_number": "35",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_numeric_escape.t",
+          "line": "35",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function returns result with undefined input'",
+            "# at t/generated/test_Simple_numeric_escape.t line 35."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 9,
+        "description": "Result matches expected output with undefined input",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Result matches expected output with undefined input'\n# at t/generated/test_Simple_numeric_escape.t line 36.\n# +---------+-------+\n# | GOT     | CHECK |\n# +---------+-------+\n# | <UNDEF> |       |\n# +---------+-------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Result matches expected output with undefined input",
+          "line_number": "36",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_numeric_escape.t",
+          "line": "36",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Result matches expected output with undefined input'",
+            "# at t/generated/test_Simple_numeric_escape.t line 36.",
+            "# +---------+-------+",
+            "# | GOT     | CHECK |",
+            "# +---------+-------+",
+            "# | <UNDEF> |       |",
+            "# +---------+-------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 10,
+        "description": "Function returns result with invalid level",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 11,
+        "description": "Result matches expected output with invalid level",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_handle_options.t": [
+      {
+        "test_num": 1,
+        "description": "handle_options is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function crashed: Unrecognised option: rootname at t/generated/test_Simple_handle_options.t line 16.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Unrecognised option: rootname at t/generated/test_Simple_handle_options.t line 16.\n'\n# at t/generated/test_Simple_handle_options.t line 17.",
+        "error_details": {
+          "error_type": "test_failure",
+          "line_number": "17",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_handle_options.t",
+          "line": "17",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Unrecognised option: rootname at t/generated/test_Simple_handle_options.t line 16.",
+            "'",
+            "# at t/generated/test_Simple_handle_options.t line 17."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function throws error with invalid option",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 4,
+        "description": "Function throws error with missing value for option",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result with ForceArray option as regex",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function returns result with ForceArray option as regex'\n# at t/generated/test_Simple_handle_options.t line 29.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function returns result with ForceArray option as regex",
+          "line_number": "29",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_handle_options.t",
+          "line": "29",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function returns result with ForceArray option as regex'",
+            "# at t/generated/test_Simple_handle_options.t line 29."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result with KeyAttr option as hashref",
+        "status": "not ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_cache_read_memshare.t": [
+      {
+        "test_num": 1,
+        "description": "cache_read_memshare is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Simple_cache_read_memshare.t .. \nok 1 - cache_read_memshare is defined\nDubious, test returned 25 (wstat 6400, 0x1900)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Simple_cache_read_memshare.t (Wstat: 6400 Tests: 1 Failed: 0)\n  Non-zero exit status: 25\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  1 wallclock secs ( 0.01 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nCannot override '&XML::Simple::MemShareCache', symbol is not already defined at t/generated/test_Simple_cache_read_memshare.t line 20.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 25 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Simple_cache_read_memshare.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_set_var.t": [
+      {
+        "test_num": 1,
+        "description": "set_var is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "set_var sets value",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "set_var initializes _var_values hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "set_var handles invalid variable name",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_sorted_keys.t": [
+      {
+        "test_num": 1,
+        "description": "sorted_keys is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result when nosort is set",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Simple_sorted_keys.t .. \nok 1 - sorted_keys is defined\nok 2 - Function returns result when nosort is set\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 2 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Simple_sorted_keys.t (Wstat: 65280 Tests: 2 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=2,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.12 CPU)\nResult: FAIL\nUndefined subroutine &main::is_deeply called at t/generated/test_Simple_sorted_keys.t line 20.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #2.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Simple_sorted_keys.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_parse_fh.t": [
+      {
+        "test_num": 1,
+        "description": "parse_fh is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Invalid filehandle error",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 738.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 738.\n'\n# at t/generated/test_Simple_parse_fh.t line 23.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "23",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_parse_fh.t",
+          "line": "23",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 738.",
+            "'",
+            "# at t/generated/test_Simple_parse_fh.t line 23."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 738.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 738.\n'\n# at t/generated/test_Simple_parse_fh.t line 31.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "31",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_parse_fh.t",
+          "line": "31",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 738.",
+            "'",
+            "# at t/generated/test_Simple_parse_fh.t line 31."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 5,
+        "description": "Malformed XML error",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Malformed XML error'\n# at t/generated/test_Simple_parse_fh.t line 39.\n# +------------------------------------------------+----+------------------+\n# | GOT                                            | OP | CHECK            |\n# +------------------------------------------------+----+------------------+\n# | Can't use string (\"XML::Simple\") as a HASH ref | =~ | (?^:parse error) |\n# |  while \"strict refs\" in use at XML/Simple.pm l |    |                  |\n# | ine 738.\\n                                     |    |                  |\n# +------------------------------------------------+----+------------------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Malformed XML error",
+          "line_number": "39",
+          "expected": "=~",
+          "got": "#",
+          "file": "t/generated/test_Simple_parse_fh.t",
+          "line": "39",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Malformed XML error'",
+            "# at t/generated/test_Simple_parse_fh.t line 39.",
+            "# +------------------------------------------------+----+------------------+",
+            "# | GOT                                            | OP | CHECK            |",
+            "# +------------------------------------------------+----+------------------+",
+            "# | Can't use string (\"XML::Simple\") as a HASH ref | =~ | (?^:parse error) |",
+            "# |  while \"strict refs\" in use at XML/Simple.pm l |    |                  |",
+            "# | ine 738.\\n                                     |    |                  |",
+            "# +------------------------------------------------+----+------------------+"
+          ],
+          "operator": "Can't use string (\"XML::Simple\") as a HASH ref",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      }
+    ],
+    "test_Simple__strict_mode_for_caller.t": [
+      {
+        "test_num": 1,
+        "description": "_strict_mode_for_caller is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "_strict_mode_for_caller returns result with no arguments",
+        "status": "not ok",
+        "diagnostics": "at t/generated/test_Simple__strict_mode_for_caller.t line 16.",
+        "error_details": {
+          "error_type": "unknown",
+          "error_message": null,
+          "expected": null,
+          "actual": null,
+          "failed_test_name": null,
+          "perl_errors": [],
+          "comparison_failure": false,
+          "got": null,
+          "file": null,
+          "line": null,
+          "exception": null,
+          "raw_diagnostics": [
+            "at t/generated/test_Simple__strict_mode_for_caller.t line 16."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "_strict_mode_for_caller returns result with set_mode argument",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "_strict_mode_for_caller returns result with set_mode argument",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "_strict_mode_for_caller returns result without arguments after setting",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_copy_hash.t": [
+      {
+        "test_num": 1,
+        "description": "copy_hash is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result for empty hash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Simple_copy_hash.t .. \nok 1 - copy_hash is defined\nok 2 - Function returns result for empty hash\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 2 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Simple_copy_hash.t (Wstat: 65280 Tests: 2 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=2,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nUndefined subroutine &main::is_deeply called at t/generated/test_Simple_copy_hash.t line 17.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #2.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Simple_copy_hash.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_XMLout.t": [
+      {
+        "test_num": 1,
+        "description": "XMLout is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "XMLout returns result for valid input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "XMLout did not crash for invalid input",
+        "status": "not ok",
+        "diagnostics": "Failed test 'XMLout did not crash for invalid input'\n# at t/generated/test_Simple_XMLout.t line 22.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "XMLout did not crash for invalid input",
+          "line_number": "22",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_XMLout.t",
+          "line": "22",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'XMLout did not crash for invalid input'",
+            "# at t/generated/test_Simple_XMLout.t line 22."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "XMLout returns result for empty input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "XMLout returns result for nested input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "XMLout crashes for circular reference",
+        "status": "not ok",
+        "diagnostics": "Failed test 'XMLout crashes for circular reference'\n# at t/generated/test_Simple_XMLout.t line 38.\n# +---------------------------------+----+---------------------------------+\n# | GOT                             | OP | CHECK                           |\n# +---------------------------------+----+---------------------------------+\n# | circular data structures not su | =~ | (?^:Circular reference detected |\n# | pported at t/generated/test_Sim |    | )                               |\n# | ple_XMLout.t line 37.\\n         |    |                                 |\n# +---------------------------------+----+---------------------------------+\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 25 after test #7.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "XMLout crashes for circular reference",
+          "line_number": "38",
+          "expected": "=~",
+          "got": "#",
+          "file": "t/generated/test_Simple_XMLout.t",
+          "line": "38",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'XMLout crashes for circular reference'",
+            "# at t/generated/test_Simple_XMLout.t line 38.",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | GOT                             | OP | CHECK                           |",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | circular data structures not su | =~ | (?^:Circular reference detected |",
+            "# | pported at t/generated/test_Sim |    | )                               |",
+            "# | ple_XMLout.t line 37.\\n         |    |                                 |",
+            "# +---------------------------------+----+---------------------------------+",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 25 after test #7."
+          ],
+          "operator": "circular data structures not su",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "XMLout returns result for output file option",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_cache_write_memshare.t": [
+      {
+        "test_num": 1,
+        "description": "cache_write_memshare is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result with empty data",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result with invalid data",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result with empty filename",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result on cache overwrite",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_new_xml_parser.t": [
+      {
+        "test_num": 1,
+        "description": "new_xml_parser is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function crashed: Can't locate object method \"new\" via package \"XML::Parser\" at XML/Simple.pm line 456.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't locate object method \"new\" via package \"XML::Parser\" at XML/Simple.pm line 456.\n'\n# at t/generated/test_Simple_new_xml_parser.t line 18.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #2.\nUse of uninitialized value $indent in string eq at XML/Simple.pm line 1439.\nUse of uninitialized value in string eq at XML/Simple.pm line 1598.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "18",
+          "expected": null,
+          "got": null,
+          "file": "XML/Simple.pm",
+          "line": "1598",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't locate object method \"new\" via package \"XML::Parser\" at XML/Simple.pm line 456.",
+            "'",
+            "# at t/generated/test_Simple_new_xml_parser.t line 18.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #2.",
+            "Use of uninitialized value $indent in string eq at XML/Simple.pm line 1439.",
+            "Use of uninitialized value in string eq at XML/Simple.pm line 1598."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_value_to_xml.t": [
+      {
+        "test_num": 1,
+        "description": "value_to_xml is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result for simple hashref",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Correct XML output for simple hashref",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Correct XML output for simple hashref'\n# at t/generated/test_Simple_value_to_xml.t line 18.\n# +-----------------+----+----------------+\n# | GOT             | OP | CHECK          |\n# +-----------------+----+----------------+\n# |  foo=\"bar\" />\\n | eq | <foo>bar</foo> |\n# +-----------------+----+----------------+\nUse of uninitialized value $indent in string eq at XML/Simple.pm line 1439.\nUse of uninitialized value $indent in concatenation (.) or string at XML/Simple.pm line 1594.\nUse of uninitialized value in string eq at XML/Simple.pm line 1598.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Correct XML output for simple hashref",
+          "line_number": "18",
+          "expected": "eq",
+          "got": "#",
+          "file": "XML/Simple.pm",
+          "line": "1598",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Correct XML output for simple hashref'",
+            "# at t/generated/test_Simple_value_to_xml.t line 18.",
+            "# +-----------------+----+----------------+",
+            "# | GOT             | OP | CHECK          |",
+            "# +-----------------+----+----------------+",
+            "# |  foo=\"bar\" />\\n | eq | <foo>bar</foo> |",
+            "# +-----------------+----+----------------+",
+            "Use of uninitialized value $indent in string eq at XML/Simple.pm line 1439.",
+            "Use of uninitialized value $indent in concatenation (.) or string at XML/Simple.pm line 1594.",
+            "Use of uninitialized value in string eq at XML/Simple.pm line 1598."
+          ],
+          "operator": "foo=\"bar\" />\\n",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result for nested hashref",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Correct XML output for nested hashref",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Correct XML output for nested hashref'\n# at t/generated/test_Simple_value_to_xml.t line 24.\n# +-----------------------+----+---------------------------+\n# | GOT                   | OP | CHECK                     |\n# +-----------------------+----+---------------------------+\n# |   <foo bar=\"baz\" />\\n | eq | <foo><bar>baz</bar></foo> |\n# +-----------------------+----+---------------------------+\nUse of uninitialized value $indent in string eq at XML/Simple.pm line 1439.\nUse of uninitialized value $result[0] in join or string at XML/Simple.pm line 1672.\nUse of uninitialized value $result[2] in join or string at XML/Simple.pm line 1672.\nUse of uninitialized value $result[6] in join or string at XML/Simple.pm line 1672.\nUse of uninitialized value $result[8] in join or string at XML/Simple.pm line 1672.\nUse of uninitialized value $result[10] in join or string at XML/Simple.pm line 1672.\nUse of uninitialized value $result[14] in join or string at XML/Simple.pm line 1672.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Correct XML output for nested hashref",
+          "line_number": "24",
+          "expected": "eq",
+          "got": "#",
+          "file": "XML/Simple.pm",
+          "line": "1672",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Correct XML output for nested hashref'",
+            "# at t/generated/test_Simple_value_to_xml.t line 24.",
+            "# +-----------------------+----+---------------------------+",
+            "# | GOT                   | OP | CHECK                     |",
+            "# +-----------------------+----+---------------------------+",
+            "# |   <foo bar=\"baz\" />\\n | eq | <foo><bar>baz</bar></foo> |",
+            "# +-----------------------+----+---------------------------+",
+            "Use of uninitialized value $indent in string eq at XML/Simple.pm line 1439.",
+            "Use of uninitialized value $result[0] in join or string at XML/Simple.pm line 1672.",
+            "Use of uninitialized value $result[2] in join or string at XML/Simple.pm line 1672.",
+            "Use of uninitialized value $result[6] in join or string at XML/Simple.pm line 1672.",
+            "Use of uninitialized value $result[8] in join or string at XML/Simple.pm line 1672.",
+            "Use of uninitialized value $result[10] in join or string at XML/Simple.pm line 1672.",
+            "Use of uninitialized value $result[14] in join or string at XML/Simple.pm line 1672."
+          ],
+          "operator": "<foo bar=\"baz\" />\\n",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result for arrayref",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Correct XML output for arrayref",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Correct XML output for arrayref'\n# at t/generated/test_Simple_value_to_xml.t line 30.\n# +------------+----+----------------------------------+\n# | GOT        | OP | CHECK                            |\n# +------------+----+----------------------------------+\n# | <>foo</>\\n | eq | <anon>foo</anon><anon>bar</anon> |\n# | <>bar</>\\n |    |                                  |\n# +------------+----+----------------------------------+\nUse of uninitialized value $indent in string eq at XML/Simple.pm line 1439.\nUse of uninitialized value $indent in concatenation (.) or string at XML/Simple.pm line 1594.\nUse of uninitialized value $indent in string eq at XML/Simple.pm line 1439.\nUse of uninitialized value at t/generated/test_Simple_value_to_xml.t line 40.\nUse of uninitialized value in string eq at XML/Simple.pm line 1576.\nUse of uninitialized value in string eq at XML/Simple.pm line 1598.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Correct XML output for arrayref",
+          "line_number": "40",
+          "expected": "eq",
+          "got": "#",
+          "file": "XML/Simple.pm",
+          "line": "1598",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Correct XML output for arrayref'",
+            "# at t/generated/test_Simple_value_to_xml.t line 30.",
+            "# +------------+----+----------------------------------+",
+            "# | GOT        | OP | CHECK                            |",
+            "# +------------+----+----------------------------------+",
+            "# | <>foo</>\\n | eq | <anon>foo</anon><anon>bar</anon> |",
+            "# | <>bar</>\\n |    |                                  |",
+            "# +------------+----+----------------------------------+",
+            "Use of uninitialized value $indent in string eq at XML/Simple.pm line 1439.",
+            "Use of uninitialized value $indent in concatenation (.) or string at XML/Simple.pm line 1594.",
+            "Use of uninitialized value $indent in string eq at XML/Simple.pm line 1439.",
+            "Use of uninitialized value at t/generated/test_Simple_value_to_xml.t line 40.",
+            "Use of uninitialized value in string eq at XML/Simple.pm line 1576.",
+            "Use of uninitialized value in string eq at XML/Simple.pm line 1598."
+          ],
+          "operator": "<>foo</>\\n",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Correct error message for circular data structure",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 9,
+        "description": "Function returns result for undefined value",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 10,
+        "description": "Correct XML output for undefined value",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Correct XML output for undefined value'\n# at t/generated/test_Simple_value_to_xml.t line 42.\n# +--------------+----+-------------+\n# | GOT          | OP | CHECK       |\n# +--------------+----+-------------+\n# |  foo=\"\" />\\n | eq | <foo></foo> |\n# +--------------+----+-------------+\nUse of uninitialized value in numeric eq (==) at XML/Simple.pm line 1282.\nUse of uninitialized value in numeric eq (==) at XML/Simple.pm line 1282.\nUse of uninitialized value in numeric eq (==) at XML/Simple.pm line 1315.\nUse of uninitialized value in numeric eq (==) at XML/Simple.pm line 1315.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Correct XML output for undefined value",
+          "line_number": "42",
+          "expected": "eq",
+          "got": "#",
+          "file": "XML/Simple.pm",
+          "line": "1315",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Correct XML output for undefined value'",
+            "# at t/generated/test_Simple_value_to_xml.t line 42.",
+            "# +--------------+----+-------------+",
+            "# | GOT          | OP | CHECK       |",
+            "# +--------------+----+-------------+",
+            "# |  foo=\"\" />\\n | eq | <foo></foo> |",
+            "# +--------------+----+-------------+",
+            "Use of uninitialized value in numeric eq (==) at XML/Simple.pm line 1282.",
+            "Use of uninitialized value in numeric eq (==) at XML/Simple.pm line 1282.",
+            "Use of uninitialized value in numeric eq (==) at XML/Simple.pm line 1315.",
+            "Use of uninitialized value in numeric eq (==) at XML/Simple.pm line 1315."
+          ],
+          "operator": "foo=\"\" />\\n",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_characters.t": [
+      {
+        "test_num": 1,
+        "description": "characters is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result for empty $chars",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result for undefined $chars",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result for non-string Data",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result for string Data",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result for uninitialized $self->{curlist}",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Function returns result for empty $self->{curlist}",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Function returns result for $self->{curlist} with one element",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 9,
+        "description": "Function returns result for $self->{curlist} with multiple elements",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_array_to_hash.t": [
+      {
+        "test_num": 1,
+        "description": "array_to_hash is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result for hash keyattr",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result for array keyattr",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function crashed: Can't use an undefined value as an ARRAY reference at XML/Simple.pm line 1301.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't use an undefined value as an ARRAY reference at XML/Simple.pm line 1301.\n'\n# at t/generated/test_Simple_array_to_hash.t line 31.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 2 after test #4.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #5.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "31",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_array_to_hash.t",
+          "line": "31",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't use an undefined value as an ARRAY reference at XML/Simple.pm line 1301.",
+            "'",
+            "# at t/generated/test_Simple_array_to_hash.t line 31.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 2 after test #4.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #5."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result for empty arrayref",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result when element does not contain key attribute",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      }
+    ],
+    "test_Simple_cache_read_storable.t": [
+      {
+        "test_num": 1,
+        "description": "cache_read_storable is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Cache file does not exist",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Cache file is not readable",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Cache file is older than source file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Simple_cache_read_storable.t .. \nok 1 - cache_read_storable is defined\nok 2 - Cache file does not exist\nok 3 - Cache file is not readable\nok 4 - Cache file is older than source file\nDubious, test returned 2 (wstat 512, 0x200)\nAll 4 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Simple_cache_read_storable.t (Wstat: 512 Tests: 4 Failed: 0)\n  Non-zero exit status: 2\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=4,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.09 cusr  0.01 csys =  0.11 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Simple_cache_read_storable.t line 45.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 2 after test #4.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Simple_cache_read_storable.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_start_document.t": [
+      {
+        "test_num": 1,
+        "description": "start_document is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "start_document returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "lists is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "curlist is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "tree is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Simple_start_document.t .. \nok 1 - start_document is defined\nok 2 - start_document returns result\nok 3 - lists is defined\nok 4 - curlist is defined\nok 5 - tree is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 5 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Simple_start_document.t (Wstat: 65280 Tests: 5 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=5,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\nSymbol package (XML) and package argument (XML::Simple) do not match at /usr/local/share/perl5/Test2/Mock.pm line 287.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #5.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Simple_start_document.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_XMLin.t": [
+      {
+        "test_num": 1,
+        "description": "XMLin is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "XMLin crashed with undefined target: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 738.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'XMLin crashed with undefined target: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 738.\n'\n# at t/generated/test_Simple_XMLin.t line 16.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 25 after test #2.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 25 after test #4.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "XMLin crashed with undefined target: Can",
+          "line_number": "16",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Simple_XMLin.t",
+          "line": "16",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'XMLin crashed with undefined target: Can't use string (\"XML::Simple\") as a HASH ref while \"strict refs\" in use at XML/Simple.pm line 738.",
+            "'",
+            "# at t/generated/test_Simple_XMLin.t line 16.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 25 after test #2.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 25 after test #4."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_cache_write_storable.t": [
+      {
+        "test_num": 1,
+        "description": "cache_write_storable is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Normal operation on non-VMS system",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Normal operation on VMS system",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Error handling - invalid data",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Simple_cache_write_storable.t .. \nok 1 - cache_write_storable is defined\nok 2 - Normal operation on non-VMS system\nok 3 - Normal operation on VMS system\nok 4 - Error handling - invalid data\nDubious, test returned 25 (wstat 6400, 0x1900)\nAll 4 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Simple_cache_write_storable.t (Wstat: 6400 Tests: 4 Failed: 0)\n  Non-zero exit status: 25\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=4,  1 wallclock secs ( 0.01 usr  0.01 sys +  0.09 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\nUndefined subroutine &VMS::Stdio::vmssysopen called at /usr/share/perl5/vendor_perl/File/Temp.pm line 505.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 25 after test #4.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Simple_cache_write_storable.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Simple_new.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_Simple_new.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_Simple_new.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.01 csys =  0.12 CPU)\nResult: FAIL\nBareword \"key\" not allowed while \"strict subs\" in use at t/generated/test_Simple_new.t line 19.\nExecution of t/generated/test_Simple_new.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_Simple_new.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ]
+  },
+  "metadata": {
+    "test_framework": "Test2::V0",
+    "parsing_enhanced": true,
+    "diagnostic_features": [
+      "enhanced_error_reporting",
+      "structured_diagnostics",
+      "better_comparison_output",
+      "exception_capture",
+      "comparison_table_extraction"
+    ]
+  }
+}

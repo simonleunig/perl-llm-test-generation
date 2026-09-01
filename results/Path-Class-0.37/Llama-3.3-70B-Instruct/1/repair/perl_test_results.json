@@ -1,0 +1,4424 @@
+{
+  "summary": {
+    "total_files": 68,
+    "total_tests": 326,
+    "passed": 262,
+    "failed": 64,
+    "test2_framework": "Test2::V0",
+    "enhanced_diagnostics": {
+      "test2_enhanced_failures": 64,
+      "error_type_breakdown": {
+        "test_failure": 53,
+        "unknown": 8,
+        "no_output": 3
+      },
+      "diagnostic_coverage": "64/64",
+      "comparison_tables": 7,
+      "structured_failures": "7/64"
+    }
+  },
+  "tests": {
+    "test_File_traverse.t": [
+      {
+        "test_num": 1,
+        "description": "traverse is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Valid callback returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Invalid callback throws error",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Callback exception is propagated",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_basename.t": [
+      {
+        "test_num": 1,
+        "description": "basename is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "basename returns file name",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "basename returns empty string on empty file name",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "basename returns file name with special characters",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_BEGIN.t": [
+      {
+        "test_num": 1,
+        "description": "parent is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "parent returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "parent returns a Path::Class::Dir object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "parent returns result for non-existent file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_new.t": [
+      {
+        "test_num": 1,
+        "description": "new is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Entity_new.t .. \nok 1 - new is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_new.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.09 cusr  0.01 csys =  0.12 CPU)\nResult: FAIL\nCan't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at t/generated/test_Entity_new.t line 14.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Entity_new.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_basename.t": [
+      {
+        "test_num": 1,
+        "description": "basename is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "basename returns empty string on empty path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "basename returns last directory name on valid path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "basename returns last directory name on path with multiple components",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "basename crashes on invalid path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_is_dir.t": [
+      {
+        "test_num": 1,
+        "description": "is_dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "is_dir returns 1",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Mock function crashed: Can't locate object method \"is_dir\" via package \"Test2::Mock\" at t/generated/test_Dir_is_dir.t line 30.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Mock function crashed: Can't locate object method \"is_dir\" via package \"Test2::Mock\" at t/generated/test_Dir_is_dir.t line 30.\n'\n# at t/generated/test_Dir_is_dir.t line 31.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Mock function crashed: Can",
+          "line_number": "31",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_is_dir.t",
+          "line": "31",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Mock function crashed: Can't locate object method \"is_dir\" via package \"Test2::Mock\" at t/generated/test_Dir_is_dir.t line 30.",
+            "'",
+            "# at t/generated/test_Dir_is_dir.t line 31."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_volume.t": [
+      {
+        "test_num": 1,
+        "description": "volume is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result for valid directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns undefined for invalid directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns undefined for relative path",
+        "status": "not ok",
+        "diagnostics": "at t/generated/test_Dir_volume.t line 23.",
+        "error_details": {
+          "error_type": "unknown",
+          "error_message": null,
+          "expected": null,
+          "actual": null,
+          "failed_test_name": null,
+          "perl_errors": [],
+          "comparison_failure": false,
+          "got": null,
+          "file": null,
+          "line": null,
+          "exception": null,
+          "raw_diagnostics": [
+            "at t/generated/test_Dir_volume.t line 23."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_new.t": [
+      {
+        "test_num": 1,
+        "description": "new is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_rmtree.t": [
+      {
+        "test_num": 1,
+        "description": "rmtree is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Directory removed successfully",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "rmtree on non-existent directory did not crash",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Read-only directory removed successfully",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Error handling works correctly",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_slurp.t": [
+      {
+        "test_num": 1,
+        "description": "slurp is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Slurp in scalar context returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Slurp in scalar context returns correct result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Slurp in list context returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_slurp.t .. \nok 1 - slurp is defined\nok 2 - Slurp in scalar context returns result\nok 3 - Slurp in scalar context returns correct result\nok 4 - Slurp in list context returns result\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 4 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_slurp.t (Wstat: 65280 Tests: 4 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=4,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.14 CPU)\nResult: FAIL\nUndefined subroutine &main::is_deeply called at t/generated/test_File_slurp.t line 25.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #4.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_slurp.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_traverse.t": [
+      {
+        "test_num": 1,
+        "description": "traverse is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "traverse returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "traverse on empty directory returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "traverse on non-existent directory throws correct error",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_remove.t": [
+      {
+        "test_num": 1,
+        "description": "remove is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Remove non-existent file returns false",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Remove existing file returns true",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Remove directory returns false",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_dir_list.t": [
+      {
+        "test_num": 1,
+        "description": "dir_list is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Returns an array reference",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Returns an array reference'\n# at t/generated/test_Dir_dir_list.t line 20.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Returns an array reference",
+          "line_number": "20",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_dir_list.t",
+          "line": "20",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Returns an array reference'",
+            "# at t/generated/test_Dir_dir_list.t line 20."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Returns an array reference",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Returns an array reference'\n# at t/generated/test_Dir_dir_list.t line 28.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Returns an array reference",
+          "line_number": "28",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_dir_list.t",
+          "line": "28",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Returns an array reference'",
+            "# at t/generated/test_Dir_dir_list.t line 28."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Returns an array reference",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Returns an array reference'\n# at t/generated/test_Dir_dir_list.t line 36.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Returns an array reference",
+          "line_number": "36",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_dir_list.t",
+          "line": "36",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Returns an array reference'",
+            "# at t/generated/test_Dir_dir_list.t line 36."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 9,
+        "description": "Returns an array reference",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Returns an array reference'\n# at t/generated/test_Dir_dir_list.t line 44.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Returns an array reference",
+          "line_number": "44",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_dir_list.t",
+          "line": "44",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Returns an array reference'",
+            "# at t/generated/test_Dir_dir_list.t line 44."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 10,
+        "description": "Function returns result",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function returns result'\n# at t/generated/test_Dir_dir_list.t line 48.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function returns result",
+          "line_number": "48",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_dir_list.t",
+          "line": "48",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function returns result'",
+            "# at t/generated/test_Dir_dir_list.t line 48."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 11,
+        "description": "Returns an array reference",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Returns an array reference'\n# at t/generated/test_Dir_dir_list.t line 52.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Returns an array reference",
+          "line_number": "52",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_dir_list.t",
+          "line": "52",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Returns an array reference'",
+            "# at t/generated/test_Dir_dir_list.t line 52."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 12,
+        "description": "Function returns result in scalar context",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 13,
+        "description": "Returns a scalar value",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_is_dir.t": [
+      {
+        "test_num": 1,
+        "description": "is_dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "is_dir returns 0",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_volume.t": [
+      {
+        "test_num": 1,
+        "description": "volume is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Volume is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Volume is not defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Volume method error",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Error message correct",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_traverse_if.t": [
+      {
+        "test_num": 1,
+        "description": "traverse_if is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "traverse_if returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "traverse_if with invalid callback throws an error",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "traverse_if with invalid condition did not throw an error",
+        "status": "not ok",
+        "diagnostics": "Failed test 'traverse_if with invalid condition did not throw an error'\n# at t/generated/test_File_traverse_if.t line 26.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "traverse_if with invalid condition did not throw an error",
+          "line_number": "26",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_File_traverse_if.t",
+          "line": "26",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'traverse_if with invalid condition did not throw an error'",
+            "# at t/generated/test_File_traverse_if.t line 26."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "traverse_if with non-existent file did not throw an error",
+        "status": "not ok",
+        "diagnostics": "Failed test 'traverse_if with non-existent file did not throw an error'\n# at t/generated/test_File_traverse_if.t line 30.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "traverse_if with non-existent file did not throw an error",
+          "line_number": "30",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_File_traverse_if.t",
+          "line": "30",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'traverse_if with non-existent file did not throw an error'",
+            "# at t/generated/test_File_traverse_if.t line 30."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_lstat.t": [
+      {
+        "test_num": 1,
+        "description": "lstat is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "lstat function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 89.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'lstat function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 89.\n'\n# at t/generated/test_Entity_lstat.t line 17.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "lstat function crashed: Can",
+          "line_number": "17",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_lstat.t",
+          "line": "17",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'lstat function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 89.",
+            "'",
+            "# at t/generated/test_Entity_lstat.t line 17."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "lstat function correctly handles non-existent file",
+        "status": "not ok",
+        "diagnostics": "Failed test 'lstat function correctly handles non-existent file'\n# at t/generated/test_Entity_lstat.t line 21.\n# +---------------------------------+----+---------------------------------+\n# | GOT                             | OP | CHECK                           |\n# +---------------------------------+----+---------------------------------+\n# | Can't resolve method \"stringify | =~ | (?^:No such file or directory)  |\n# | \" overloading \"\"\"\" in package \" |    |                                 |\n# | Path::Class::Entity\" at Path/Cl |    |                                 |\n# | ass/Entity.pm line 89.\\n        |    |                                 |\n# +---------------------------------+----+---------------------------------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "lstat function correctly handles non-existent file",
+          "line_number": "21",
+          "expected": "=~",
+          "got": "#",
+          "file": "t/generated/test_Entity_lstat.t",
+          "line": "21",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'lstat function correctly handles non-existent file'",
+            "# at t/generated/test_Entity_lstat.t line 21.",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | GOT                             | OP | CHECK                           |",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | Can't resolve method \"stringify | =~ | (?^:No such file or directory)  |",
+            "# | \" overloading \"\"\"\" in package \" |    |                                 |",
+            "# | Path::Class::Entity\" at Path/Cl |    |                                 |",
+            "# | ass/Entity.pm line 89.\\n        |    |                                 |",
+            "# +---------------------------------+----+---------------------------------+"
+          ],
+          "operator": "Can't resolve method \"stringify",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 4,
+        "description": "lstat function correctly handles invalid file path",
+        "status": "not ok",
+        "diagnostics": "Failed test 'lstat function correctly handles invalid file path'\n# at t/generated/test_Entity_lstat.t line 25.\n# +---------------------------------+----+---------------------------------+\n# | GOT                             | OP | CHECK                           |\n# +---------------------------------+----+---------------------------------+\n# | Can't resolve method \"stringify | =~ | (?^:Can't call method \"lstat\" o |\n# | \" overloading \"\"\"\" in package \" |    | n an undefined)                 |\n# | Path::Class::Entity\" at Path/Cl |    |                                 |\n# | ass/Entity.pm line 89.\\n        |    |                                 |\n# +---------------------------------+----+---------------------------------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "lstat function correctly handles invalid file path",
+          "line_number": "25",
+          "expected": "=~",
+          "got": "#",
+          "file": "t/generated/test_Entity_lstat.t",
+          "line": "25",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'lstat function correctly handles invalid file path'",
+            "# at t/generated/test_Entity_lstat.t line 25.",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | GOT                             | OP | CHECK                           |",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | Can't resolve method \"stringify | =~ | (?^:Can't call method \"lstat\" o |",
+            "# | \" overloading \"\"\"\" in package \" |    | n an undefined)                 |",
+            "# | Path::Class::Entity\" at Path/Cl |    |                                 |",
+            "# | ass/Entity.pm line 89.\\n        |    |                                 |",
+            "# +---------------------------------+----+---------------------------------+"
+          ],
+          "operator": "Can't resolve method \"stringify",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_openw.t": [
+      {
+        "test_num": 1,
+        "description": "openw is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "openw returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "openw throws exception on permissions issue",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "openw did not throw exception on non-existent file",
+        "status": "not ok",
+        "diagnostics": "Failed test 'openw did not throw exception on non-existent file'\n# at t/generated/test_File_openw.t line 33.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "openw did not throw exception on non-existent file",
+          "line_number": "33",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_File_openw.t",
+          "line": "33",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'openw did not throw exception on non-existent file'",
+            "# at t/generated/test_File_openw.t line 33."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity__spec_class.t": [
+      {
+        "test_num": 1,
+        "description": "_spec_class is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Returns correct class for Unix",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Dies with correct error message for invalid type",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Dies with correct error message for invalid type'\n# at t/generated/test_Entity__spec_class.t line 17.\n# +---------------------------------+----+---------------------------------+\n# | GOT                             | OP | CHECK                           |\n# +---------------------------------+----+---------------------------------+\n# | Can't locate File/Spec/Invalid. | =~ | (?^:Invalid system type)        |\n# | pm in @INC (you may need to ins |    |                                 |\n# | tall the File::Spec::Invalid mo |    |                                 |\n# | dule) (@INC contains: . /tmp/te |    |                                 |\n# | st_run_67606c0c /tmp/perl_cpan_ |    |                                 |\n# | home/lib/perl5 /workspace /usr/ |    |                                 |\n# | local/lib64/perl5 /usr/local/sh |    |                                 |\n# | are/perl5 /usr/lib64/perl5/vend |    |                                 |\n# | or_perl /usr/share/perl5/vendor |    |                                 |\n# | _perl /usr/lib64/perl5 /usr/sha |    |                                 |\n# | re/perl5) at (eval 30) line 1.\\ |    |                                 |\n# | n                               |    |                                 |\n# +---------------------------------+----+---------------------------------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Dies with correct error message for invalid type",
+          "line_number": "17",
+          "expected": "=~",
+          "got": "#",
+          "file": "(eval 30)",
+          "line": "1",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Dies with correct error message for invalid type'",
+            "# at t/generated/test_Entity__spec_class.t line 17.",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | GOT                             | OP | CHECK                           |",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | Can't locate File/Spec/Invalid. | =~ | (?^:Invalid system type)        |",
+            "# | pm in @INC (you may need to ins |    |                                 |",
+            "# | tall the File::Spec::Invalid mo |    |                                 |",
+            "# | dule) (@INC contains: . /tmp/te |    |                                 |",
+            "# | st_run_67606c0c /tmp/perl_cpan_ |    |                                 |",
+            "# | home/lib/perl5 /workspace /usr/ |    |                                 |",
+            "# | local/lib64/perl5 /usr/local/sh |    |                                 |",
+            "# | are/perl5 /usr/lib64/perl5/vend |    |                                 |",
+            "# | or_perl /usr/share/perl5/vendor |    |                                 |",
+            "# | _perl /usr/lib64/perl5 /usr/sha |    |                                 |",
+            "# | re/perl5) at (eval 30) line 1.\\ |    |                                 |",
+            "# | n                               |    |                                 |",
+            "# +---------------------------------+----+---------------------------------+"
+          ],
+          "operator": "Can't locate File/Spec/Invalid.",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Dies with correct error message for empty type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Dies with correct error message for tainted type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_tempfile.t": [
+      {
+        "test_num": 1,
+        "description": "tempfile is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Temporary directory created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "tempfile function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "tempfile function with arguments returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Invalid directory created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "tempfile function handles invalid directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_relative.t": [
+      {
+        "test_num": 1,
+        "description": "relative is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Entity created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "relative function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'relative function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.\n'\n# at t/generated/test_Entity_relative.t line 17.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "relative function crashed: Can",
+          "line_number": "17",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_relative.t",
+          "line": "17",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'relative function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+            "'",
+            "# at t/generated/test_Entity_relative.t line 17."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "relative function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'relative function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.\n'\n# at t/generated/test_Entity_relative.t line 20.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "relative function crashed: Can",
+          "line_number": "20",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_relative.t",
+          "line": "20",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'relative function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+            "'",
+            "# at t/generated/test_Entity_relative.t line 20."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 5,
+        "description": "relative function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'relative function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.\n'\n# at t/generated/test_Entity_relative.t line 23.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "relative function crashed: Can",
+          "line_number": "23",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_relative.t",
+          "line": "23",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'relative function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+            "'",
+            "# at t/generated/test_Entity_relative.t line 23."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 6,
+        "description": "relative function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'relative function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.\n'\n# at t/generated/test_Entity_relative.t line 26.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "relative function crashed: Can",
+          "line_number": "26",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_relative.t",
+          "line": "26",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'relative function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+            "'",
+            "# at t/generated/test_Entity_relative.t line 26."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      }
+    ],
+    "test_Dir_contains.t": [
+      {
+        "test_num": 1,
+        "description": "contains is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Too many arguments",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "No second entity",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Directory does not exist",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "File does not exist",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Directory contains file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Directory contains subdirectory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_opena.t": [
+      {
+        "test_num": 1,
+        "description": "opena is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "opena returns a filehandle",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "opena did not throw exception for non-existent file",
+        "status": "not ok",
+        "diagnostics": "Failed test 'opena did not throw exception for non-existent file'\n# at t/generated/test_File_opena.t line 23.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #3.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "opena did not throw exception for non-existent file",
+          "line_number": "23",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_File_opena.t",
+          "line": "23",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'opena did not throw exception for non-existent file'",
+            "# at t/generated/test_File_opena.t line 23.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #3."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "opena throws exception for non-writable file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_dir.t": [
+      {
+        "test_num": 1,
+        "description": "dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "dir returns defined directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "dir returns new directory when not defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_dir.t .. \nok 1 - dir is defined\nok 2 - dir returns defined directory\nok 3 - dir returns new directory when not defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 3 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_dir.t (Wstat: 65280 Tests: 3 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=3,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\n'_spec' does not look like a package name, and is not a valid control method at t/generated/test_File_dir.t line 31.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #3.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_dir.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_open.t": [
+      {
+        "test_num": 1,
+        "description": "open is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Open returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Returned object is an IO::Dir",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Open did not fail for non-existent directory",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Open did not fail for non-existent directory'\n# at t/generated/test_Dir_open.t line 24.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Open did not fail for non-existent directory",
+          "line_number": "24",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_open.t",
+          "line": "24",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Open did not fail for non-existent directory'",
+            "# at t/generated/test_Dir_open.t line 24."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Class_foreign_dir.t": [
+      {
+        "test_num": 1,
+        "description": "foreign_dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function crashed: Invalid system type '' at Path/Class/Entity.pm line 33.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Invalid system type '' at Path/Class/Entity.pm line 33.\n'\n# at t/generated/test_Class_foreign_dir.t line 14.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Invalid system type ",
+          "line_number": "14",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Class_foreign_dir.t",
+          "line": "14",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Invalid system type '' at Path/Class/Entity.pm line 33.",
+            "'",
+            "# at t/generated/test_Class_foreign_dir.t line 14."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function crashed: Invalid system type '' at Path/Class/Entity.pm line 33.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Invalid system type '' at Path/Class/Entity.pm line 33.\n'\n# at t/generated/test_Class_foreign_dir.t line 17.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Invalid system type ",
+          "line_number": "17",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Class_foreign_dir.t",
+          "line": "17",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Invalid system type '' at Path/Class/Entity.pm line 33.",
+            "'",
+            "# at t/generated/test_Class_foreign_dir.t line 17."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 4,
+        "description": "Function crashes with empty directory path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 5,
+        "description": "Function crashed: Invalid system type '' at Path/Class/Entity.pm line 33.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Invalid system type '' at Path/Class/Entity.pm line 33.\n'\n# at t/generated/test_Class_foreign_dir.t line 23.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Invalid system type ",
+          "line_number": "23",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Class_foreign_dir.t",
+          "line": "23",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Invalid system type '' at Path/Class/Entity.pm line 33.",
+            "'",
+            "# at t/generated/test_Class_foreign_dir.t line 23."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 6,
+        "description": "Function crashed: Invalid system type '' at Path/Class/Entity.pm line 33.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Invalid system type '' at Path/Class/Entity.pm line 33.\n'\n# at t/generated/test_Class_foreign_dir.t line 26.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Invalid system type ",
+          "line_number": "26",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Class_foreign_dir.t",
+          "line": "26",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Invalid system type '' at Path/Class/Entity.pm line 33.",
+            "'",
+            "# at t/generated/test_Class_foreign_dir.t line 26."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      }
+    ],
+    "test_File_move_to.t": [
+      {
+        "test_num": 1,
+        "description": "move_to is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "move_to returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "move_to returns undef on failure",
+        "status": "not ok",
+        "diagnostics": "Failed test 'move_to returns undef on failure'\n# at t/generated/test_File_move_to.t line 25.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "move_to returns undef on failure",
+          "line_number": "25",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_File_move_to.t",
+          "line": "25",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'move_to returns undef on failure'",
+            "# at t/generated/test_File_move_to.t line 25."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "move_to returns undef on failure",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_is_relative.t": [
+      {
+        "test_num": 1,
+        "description": "is_relative is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "is_relative returns 1 for relative path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "is_relative returns 0 for absolute path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Error handling works",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Error message correct",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_components.t": [
+      {
+        "test_num": 1,
+        "description": "components is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "components returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "components throws exception with arguments",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "components returns result for file with no directory component",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir__is_local_dot_dir.t": [
+      {
+        "test_num": 1,
+        "description": "_is_local_dot_dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns true for current directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns true for parent directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns false for other directories",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns false for non-string input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns false for undefined input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_spew_lines.t": [
+      {
+        "test_num": 1,
+        "description": "spew_lines is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result with scalar content",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function returns result with scalar content'\n# at t/generated/test_File_spew_lines.t line 17.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function returns result with scalar content",
+          "line_number": "17",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_File_spew_lines.t",
+          "line": "17",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function returns result with scalar content'",
+            "# at t/generated/test_File_spew_lines.t line 17."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result with array reference content",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function returns result with array reference content'\n# at t/generated/test_File_spew_lines.t line 21.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function returns result with array reference content",
+          "line_number": "21",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_File_spew_lines.t",
+          "line": "21",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function returns result with array reference content'",
+            "# at t/generated/test_File_spew_lines.t line 21."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns undefined with invalid content",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns undefined with readonly file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_components.t": [
+      {
+        "test_num": 1,
+        "description": "components is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "components returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "components with offset and length returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "components with invalid offset returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "components with non-numeric offset returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_touch.t": [
+      {
+        "test_num": 1,
+        "description": "touch is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "touch succeeds on existing file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "touch creates non-existent file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_open.t": [
+      {
+        "test_num": 1,
+        "description": "open is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Open returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Open returns undef for non-existent file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Open crashes with invalid mode",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity__spec.t": [
+      {
+        "test_num": 1,
+        "description": "_spec is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.\n'\n# at t/generated/test_Entity__spec.t line 15.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "15",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity__spec.t",
+          "line": "15",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+            "'",
+            "# at t/generated/test_Entity__spec.t line 15."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.\n'\n# at t/generated/test_Entity__spec.t line 19.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "19",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity__spec.t",
+          "line": "19",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+            "'",
+            "# at t/generated/test_Entity__spec.t line 19."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 4,
+        "description": "_spec returns default File::Spec for non-object reference",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 5,
+        "description": "_spec returns default File::Spec for undefined input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      }
+    ],
+    "test_Class_foreign_file.t": [
+      {
+        "test_num": 1,
+        "description": "foreign_file is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "foreign_file returns a result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "foreign_file throws an error for invalid platform",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Expected error not thrown",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Expected error not thrown'\n# at t/generated/test_Class_foreign_file.t line 20.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #4.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Expected error not thrown",
+          "line_number": "20",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Class_foreign_file.t",
+          "line": "20",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Expected error not thrown'",
+            "# at t/generated/test_Class_foreign_file.t line 20.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #4."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_file.t": [
+      {
+        "test_num": 1,
+        "description": "file is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Returned object is of class Path::Class::File",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "File object has the correct path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_file.t .. \nok 1 - file is defined\nok 2 - Function returns result\nok 3 - Returned object is of class Path::Class::File\nok 4 - File object has the correct path\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 4 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_file.t (Wstat: 65280 Tests: 4 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=4,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.02 csys =  0.14 CPU)\nResult: FAIL\n'CODE(0x56702a5029e8)' is not a valid argument for 'new' at t/generated/test_Dir_file.t line 25.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #4.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_file.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_openr.t": [
+      {
+        "test_num": 1,
+        "description": "openr is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "openr returns a filehandle",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "openr throws an error for non-existent file",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "openr throws an error for permission denied",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_resolve.t": [
+      {
+        "test_num": 1,
+        "description": "resolve is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Resolve existing file crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 67.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Resolve existing file crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 67.\n'\n# at t/generated/test_Entity_resolve.t line 16.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Resolve existing file crashed: Can",
+          "line_number": "16",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_resolve.t",
+          "line": "16",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Resolve existing file crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 67.",
+            "'",
+            "# at t/generated/test_Entity_resolve.t line 16."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Resolve non-existing file throws correct error",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Resolve non-existing file throws correct error'\n# at t/generated/test_Entity_resolve.t line 22.\n# +---------------------------------+----+---------------------------------+\n# | GOT                             | OP | CHECK                           |\n# +---------------------------------+----+---------------------------------+\n# | Can't resolve method \"stringify | =~ | (?^:No such file or directory)  |\n# | \" overloading \"\"\"\" in package \" |    |                                 |\n# | Path::Class::Entity\" at Path/Cl |    |                                 |\n# | ass/Entity.pm line 67.\\n        |    |                                 |\n# +---------------------------------+----+---------------------------------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Resolve non-existing file throws correct error",
+          "line_number": "22",
+          "expected": "=~",
+          "got": "#",
+          "file": "t/generated/test_Entity_resolve.t",
+          "line": "22",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Resolve non-existing file throws correct error'",
+            "# at t/generated/test_Entity_resolve.t line 22.",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | GOT                             | OP | CHECK                           |",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | Can't resolve method \"stringify | =~ | (?^:No such file or directory)  |",
+            "# | \" overloading \"\"\"\" in package \" |    |                                 |",
+            "# | Path::Class::Entity\" at Path/Cl |    |                                 |",
+            "# | ass/Entity.pm line 67.\\n        |    |                                 |",
+            "# +---------------------------------+----+---------------------------------+"
+          ],
+          "operator": "Can't resolve method \"stringify",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 4,
+        "description": "Resolve relative path crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 67.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Resolve relative path crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 67.\n'\n# at t/generated/test_Entity_resolve.t line 28.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Resolve relative path crashed: Can",
+          "line_number": "28",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_resolve.t",
+          "line": "28",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Resolve relative path crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 67.",
+            "'",
+            "# at t/generated/test_Entity_resolve.t line 28."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Resolve absolute path crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 67.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Resolve absolute path crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 67.\n'\n# at t/generated/test_Entity_resolve.t line 34.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Resolve absolute path crashed: Can",
+          "line_number": "34",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_resolve.t",
+          "line": "34",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Resolve absolute path crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 67.",
+            "'",
+            "# at t/generated/test_Entity_resolve.t line 34."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      }
+    ],
+    "test_Class_file.t": [
+      {
+        "test_num": 1,
+        "description": "file is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function did not handle invalid input",
+        "status": "not ok",
+        "diagnostics": "at t/generated/test_Class_file.t line 17.",
+        "error_details": {
+          "error_type": "unknown",
+          "error_message": null,
+          "expected": null,
+          "actual": null,
+          "failed_test_name": null,
+          "perl_errors": [],
+          "comparison_failure": false,
+          "got": null,
+          "file": null,
+          "line": null,
+          "exception": null,
+          "raw_diagnostics": [
+            "at t/generated/test_Class_file.t line 17."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result for single path component",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result for multiple path components",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_PRUNE.t": [
+      {
+        "test_num": 1,
+        "description": "PRUNE is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "PRUNE function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "PRUNE function returns a code reference",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "PRUNE function returns a reference to itself",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_relative.t": [
+      {
+        "test_num": 1,
+        "description": "relative is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "relative returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "relative returns result with current directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "relative returns result with different directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "relative returns result with string argument",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_mkpath.t": [
+      {
+        "test_num": 1,
+        "description": "mkpath is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result for existing directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result for nested directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_new_foreign.t": [
+      {
+        "test_num": 1,
+        "description": "new_foreign is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "new_foreign returns result with valid type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "new_foreign throws exception with invalid type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "new_foreign throws exception with empty type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "new_foreign throws exception with undefined type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_subdir.t": [
+      {
+        "test_num": 1,
+        "description": "subdir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "subdir returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "subdir returns result with multiple components",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "subdir returns result with no components",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_traverse_if.t": [
+      {
+        "test_num": 1,
+        "description": "traverse_if is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Traverse with always-true condition returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Traverse with always-false condition returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Traverse with conditional condition returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_boolify.t": [
+      {
+        "test_num": 1,
+        "description": "boolify is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "boolify returns 1",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Boolean context crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at t/generated/test_Entity_boolify.t line 17.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Boolean context crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at t/generated/test_Entity_boolify.t line 17.\n'\n# at t/generated/test_Entity_boolify.t line 18.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Boolean context crashed: Can",
+          "line_number": "18",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_boolify.t",
+          "line": "18",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Boolean context crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at t/generated/test_Entity_boolify.t line 17.",
+            "'",
+            "# at t/generated/test_Entity_boolify.t line 18."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_parent.t": [
+      {
+        "test_num": 1,
+        "description": "parent is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Absolute directory parent returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Absolute directory parent returns correct result",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Absolute directory parent returns correct result'\n# at t/generated/test_Dir_parent.t line 16.\n# +-----+---------+\n# | GOT | CHECK   |\n# +-----+---------+\n# | 2   | <ARRAY> |\n# +-----+---------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Absolute directory parent returns correct result",
+          "line_number": "16",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_parent.t",
+          "line": "16",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Absolute directory parent returns correct result'",
+            "# at t/generated/test_Dir_parent.t line 16.",
+            "# +-----+---------+",
+            "# | GOT | CHECK   |",
+            "# +-----+---------+",
+            "# | 2   | <ARRAY> |",
+            "# +-----+---------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Current directory parent returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Current directory parent returns correct result",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Current directory parent returns correct result'\n# at t/generated/test_Dir_parent.t line 21.\n# +-----+---------+\n# | GOT | CHECK   |\n# +-----+---------+\n# | 1   | <ARRAY> |\n# +-----+---------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Current directory parent returns correct result",
+          "line_number": "21",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_parent.t",
+          "line": "21",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Current directory parent returns correct result'",
+            "# at t/generated/test_Dir_parent.t line 21.",
+            "# +-----+---------+",
+            "# | GOT | CHECK   |",
+            "# +-----+---------+",
+            "# | 1   | <ARRAY> |",
+            "# +-----+---------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Relative directory parent returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Relative directory parent returns correct result",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Relative directory parent returns correct result'\n# at t/generated/test_Dir_parent.t line 26.\n# +-----+---------+\n# | GOT | CHECK   |\n# +-----+---------+\n# | 1   | <ARRAY> |\n# +-----+---------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Relative directory parent returns correct result",
+          "line_number": "26",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_parent.t",
+          "line": "26",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Relative directory parent returns correct result'",
+            "# at t/generated/test_Dir_parent.t line 26.",
+            "# +-----+---------+",
+            "# | GOT | CHECK   |",
+            "# +-----+---------+",
+            "# | 1   | <ARRAY> |",
+            "# +-----+---------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Relative directory parent returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 9,
+        "description": "Relative directory parent returns correct result",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Relative directory parent returns correct result'\n# at t/generated/test_Dir_parent.t line 31.\n# +-----+---------+\n# | GOT | CHECK   |\n# +-----+---------+\n# | 2   | <ARRAY> |\n# +-----+---------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Relative directory parent returns correct result",
+          "line_number": "31",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_parent.t",
+          "line": "31",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Relative directory parent returns correct result'",
+            "# at t/generated/test_Dir_parent.t line 31.",
+            "# +-----+---------+",
+            "# | GOT | CHECK   |",
+            "# +-----+---------+",
+            "# | 2   | <ARRAY> |",
+            "# +-----+---------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 10,
+        "description": "Single directory parent returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 11,
+        "description": "Single directory parent returns correct result",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Single directory parent returns correct result'\n# at t/generated/test_Dir_parent.t line 36.\n# +-----+---------+\n# | GOT | CHECK   |\n# +-----+---------+\n# | 1   | <ARRAY> |\n# +-----+---------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Single directory parent returns correct result",
+          "line_number": "36",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_parent.t",
+          "line": "36",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Single directory parent returns correct result'",
+            "# at t/generated/test_Dir_parent.t line 36.",
+            "# +-----+---------+",
+            "# | GOT | CHECK   |",
+            "# +-----+---------+",
+            "# | 1   | <ARRAY> |",
+            "# +-----+---------+"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_cleanup.t": [
+      {
+        "test_num": 1,
+        "description": "cleanup is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.\n'\n# at t/generated/test_Entity_cleanup.t line 15.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "15",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_cleanup.t",
+          "line": "15",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+            "'",
+            "# at t/generated/test_Entity_cleanup.t line 15."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.\n'\n# at t/generated/test_Entity_cleanup.t line 19.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "19",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_cleanup.t",
+          "line": "19",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+            "'",
+            "# at t/generated/test_Entity_cleanup.t line 19."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 4,
+        "description": "Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.\n'\n# at t/generated/test_Entity_cleanup.t line 23.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "23",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_cleanup.t",
+          "line": "23",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+            "'",
+            "# at t/generated/test_Entity_cleanup.t line 23."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 5,
+        "description": "cleanup raises exception for invalid system type",
+        "status": "not ok",
+        "diagnostics": "Failed test 'cleanup raises exception for invalid system type'\n# at t/generated/test_Entity_cleanup.t line 40.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "cleanup raises exception for invalid system type",
+          "line_number": "40",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_cleanup.t",
+          "line": "40",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'cleanup raises exception for invalid system type'",
+            "# at t/generated/test_Entity_cleanup.t line 40."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      }
+    ],
+    "test_File_copy_to.t": [
+      {
+        "test_num": 1,
+        "description": "copy_to is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Copy to file returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Destination file exists",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Copy to directory returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Destination file exists in directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Copy to unknown type raises error",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Copy to unknown type raises error'\n# at t/generated/test_File_copy_to.t line 28.\n# +---------------------------------+----+---------------------------------+\n# | GOT                             | OP | CHECK                           |\n# +---------------------------------+----+---------------------------------+\n# | Don't know how to copy files to | =~ | (?^:Don't know how to copy file |\n# |  objects of type 'Path::Class:: |    | s to objects of type 'UnknownTy |\n# | File' at t/generated/test_File_ |    | pe')                            |\n# | copy_to.t line 27.\\n            |    |                                 |\n# +---------------------------------+----+---------------------------------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Copy to unknown type raises error",
+          "line_number": "28",
+          "expected": "=~",
+          "got": "#",
+          "file": "t/generated/test_File_copy_to.t",
+          "line": "28",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Copy to unknown type raises error'",
+            "# at t/generated/test_File_copy_to.t line 28.",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | GOT                             | OP | CHECK                           |",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | Don't know how to copy files to | =~ | (?^:Don't know how to copy file |",
+            "# |  objects of type 'Path::Class:: |    | s to objects of type 'UnknownTy |",
+            "# | File' at t/generated/test_File_ |    | pe')                            |",
+            "# | copy_to.t line 27.\\n            |    |                                 |",
+            "# +---------------------------------+----+---------------------------------+"
+          ],
+          "operator": "Don't know how to copy files to",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Copy to non-existent directory raises error",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Copy to file that is a directory raises error",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_absolute.t": [
+      {
+        "test_num": 1,
+        "description": "absolute is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Entity created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Absolute path crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Absolute path crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.\n'\n# at t/generated/test_Entity_absolute.t line 17.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #3.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Absolute path crashed: Can",
+          "line_number": "17",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_absolute.t",
+          "line": "17",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Absolute path crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+            "'",
+            "# at t/generated/test_Entity_absolute.t line 17.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #3."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_as_foreign.t": [
+      {
+        "test_num": 1,
+        "description": "as_foreign is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "as_foreign returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "as_foreign dies with invalid type",
+        "status": "not ok",
+        "diagnostics": "Failed test 'as_foreign dies with invalid type'\n# at t/generated/test_Dir_as_foreign.t line 19.\n# +---------------------------------+----+---------------------------------+\n# | GOT                             | OP | CHECK                           |\n# +---------------------------------+----+---------------------------------+\n# | Can't locate File/Spec/InvalidT | =~ | (?^:Can't locate File::Spec::In |\n# | ype.pm in @INC (you may need to |    | validType.pm)                   |\n# |  install the File::Spec::Invali |    |                                 |\n# | dType module) (@INC contains: . |    |                                 |\n# |  /tmp/test_run_67606c0c /tmp/pe |    |                                 |\n# | rl_cpan_home/lib/perl5 /workspa |    |                                 |\n# | ce /usr/local/lib64/perl5 /usr/ |    |                                 |\n# | local/share/perl5 /usr/lib64/pe |    |                                 |\n# | rl5/vendor_perl /usr/share/perl |    |                                 |\n# | 5/vendor_perl /usr/lib64/perl5  |    |                                 |\n# | /usr/share/perl5) at (eval 31)  |    |                                 |\n# | line 1.\\n                       |    |                                 |\n# +---------------------------------+----+---------------------------------+\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #2.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "as_foreign dies with invalid type",
+          "line_number": "19",
+          "expected": "=~",
+          "got": "#",
+          "file": "t/generated/test_Dir_as_foreign.t",
+          "line": "19",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'as_foreign dies with invalid type'",
+            "# at t/generated/test_Dir_as_foreign.t line 19.",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | GOT                             | OP | CHECK                           |",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | Can't locate File/Spec/InvalidT | =~ | (?^:Can't locate File::Spec::In |",
+            "# | ype.pm in @INC (you may need to |    | validType.pm)                   |",
+            "# |  install the File::Spec::Invali |    |                                 |",
+            "# | dType module) (@INC contains: . |    |                                 |",
+            "# |  /tmp/test_run_67606c0c /tmp/pe |    |                                 |",
+            "# | rl_cpan_home/lib/perl5 /workspa |    |                                 |",
+            "# | ce /usr/local/lib64/perl5 /usr/ |    |                                 |",
+            "# | local/share/perl5 /usr/lib64/pe |    |                                 |",
+            "# | rl5/vendor_perl /usr/share/perl |    |                                 |",
+            "# | 5/vendor_perl /usr/lib64/perl5  |    |                                 |",
+            "# | /usr/share/perl5) at (eval 31)  |    |                                 |",
+            "# | line 1.\\n                       |    |                                 |",
+            "# +---------------------------------+----+---------------------------------+",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #2.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #1."
+          ],
+          "operator": "Can't locate File/Spec/InvalidT",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "as_foreign returns result for empty directory path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "as_foreign dies with invalid directory object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Class_tempdir.t": [
+      {
+        "test_num": 1,
+        "description": "tempdir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Returned object is an instance of Path::Class::Dir",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Temporary directory exists",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns undef when File::Temp::tempdir fails",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_stringify.t": [
+      {
+        "test_num": 1,
+        "description": "stringify is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Correct directory path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Empty directory path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Directory path with special characters",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 9,
+        "description": "Directory path with non-ASCII characters",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Class_dir.t": [
+      {
+        "test_num": 1,
+        "description": "dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "dir returns a result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "dir returns a Path::Class::Dir object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "dir returns the correct path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "dir returns a result with empty input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "dir returns a result with invalid directory components",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_dir_class.t": [
+      {
+        "test_num": 1,
+        "description": "dir_class is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "dir_class returns the correct class name",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_new.t": [
+      {
+        "test_num": 1,
+        "description": "new is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result with empty input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function returns result with single directory path component",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result with multiple directory path components",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result with Path::Class::Dir object as input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Function returns undef with undef as input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Function returns result with empty string as input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_children.t": [
+      {
+        "test_num": 1,
+        "description": "children is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result for successful directory opening",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_children.t .. \nok 1 - children is defined\nok 2 - Function returns result for successful directory opening\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 2 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_children.t (Wstat: 65280 Tests: 2 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=2,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\n'open' is not a valid constructor argument for Test2::Mock at /usr/local/share/perl5/Test2/Mock.pm line 48.\n\tTest2::Mock::new(\"Test2::Mock\", \"class\", \"Path::Class::Dir\", \"open\", CODE(0x5c00b2152d88)) called at /usr/local/share/perl5/Test2/Tools/Mock.pm line 221\n\tTest2::Tools::Mock::__ANON__() called at /usr/local/share/perl5/Test2/Tools/Mock.pm line 236\n\tTest2::Tools::Mock::mock_class(\"Path::Class::Dir\", \"open\", CODE(0x5c00b2152d88)) called at /usr/local/share/perl5/Test2/Tools/Mock.pm line 107\n\tTest2::Tools::Mock::mock(\"Path::Class::Dir\", \"open\", CODE(0x5c00b2152d88)) called at t/generated/test_Dir_children.t line 20\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #2.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_children.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_as_foreign.t": [
+      {
+        "test_num": 1,
+        "description": "as_foreign is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function returns result for valid input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function crashes for undefined file object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function crashes for invalid type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result for file object with no directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_recurse.t": [
+      {
+        "test_num": 1,
+        "description": "recurse is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Missing callback parameter throws exception",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Callback was called",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Preorder recursion callback was called",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Depth-first recursion callback was called",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "PRUNE constant prevented further recursion",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_is_absolute.t": [
+      {
+        "test_num": 1,
+        "description": "is_absolute is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Entity_is_absolute.t .. \nok 1 - is_absolute is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_is_absolute.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.09 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\n'stringify' is not a valid constructor argument for Test2::Mock at /usr/local/share/perl5/Test2/Mock.pm line 48.\n\tTest2::Mock::new(\"Test2::Mock\", \"class\", \"Path::Class::Entity\", \"stringify\", CODE(0x5c472703a5b8), \"_spec\", CODE(0x5c4726fd64e0)) called at /usr/local/share/perl5/Test2/Tools/Mock.pm line 221\n\tTest2::Tools::Mock::__ANON__() called at /usr/local/share/perl5/Test2/Tools/Mock.pm line 236\n\tTest2::Tools::Mock::mock_class(Path::Class::Entity=HASH(0x5c4726e58a50), \"stringify\", CODE(0x5c472703a5b8), \"_spec\", CODE(0x5c4726fd64e0)) called at /usr/local/share/perl5/Test2/Tools/Mock.pm line 107\n\tTest2::Tools::Mock::mock(Path::Class::Entity=HASH(0x5c4726e58a50), \"stringify\", CODE(0x5c472703a5b8), \"_spec\", CODE(0x5c4726fd64e0)) called at t/generated/test_Entity_is_absolute.t line 31\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Entity_is_absolute.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_file_class.t": [
+      {
+        "test_num": 1,
+        "description": "file_class is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "file_class returns the correct class name",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_next.t": [
+      {
+        "test_num": 1,
+        "description": "next is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "next returns result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "next throws exception when directory cannot be opened",
+        "status": "not ok",
+        "diagnostics": "Failed test 'next throws exception when directory cannot be opened'\n# at t/generated/test_Dir_next.t line 32.\n# +---------------------------------+----+---------------------------------+\n# | GOT                             | OP | CHECK                           |\n# +---------------------------------+----+---------------------------------+\n# | Can't locate object method \"nex | =~ | (?^:Can't open directory)       |\n# | t\" via package \"Test2::Mock\" at |    |                                 |\n# |  t/generated/test_Dir_next.t li |    |                                 |\n# | ne 31.\\n                        |    |                                 |\n# +---------------------------------+----+---------------------------------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "next throws exception when directory cannot be opened",
+          "line_number": "32",
+          "expected": "=~",
+          "got": "#",
+          "file": "t/generated/test_Dir_next.t",
+          "line": "32",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'next throws exception when directory cannot be opened'",
+            "# at t/generated/test_Dir_next.t line 32.",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | GOT                             | OP | CHECK                           |",
+            "# +---------------------------------+----+---------------------------------+",
+            "# | Can't locate object method \"nex | =~ | (?^:Can't open directory)       |",
+            "# | t\" via package \"Test2::Mock\" at |    |                                 |",
+            "# |  t/generated/test_Dir_next.t li |    |                                 |",
+            "# | ne 31.\\n                        |    |                                 |",
+            "# +---------------------------------+----+---------------------------------+"
+          ],
+          "operator": "Can't locate object method \"nex",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "next crashed: Can't locate object method \"next\" via package \"Test2::Mock\" at t/generated/test_Dir_next.t line 58.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'next crashed: Can't locate object method \"next\" via package \"Test2::Mock\" at t/generated/test_Dir_next.t line 58.\n'\n# at t/generated/test_Dir_next.t line 59.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "next crashed: Can",
+          "line_number": "59",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_next.t",
+          "line": "59",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'next crashed: Can't locate object method \"next\" via package \"Test2::Mock\" at t/generated/test_Dir_next.t line 58.",
+            "'",
+            "# at t/generated/test_Dir_next.t line 59."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "next crashed: Can't locate object method \"next\" via package \"Test2::Mock\" at t/generated/test_Dir_next.t line 91.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'next crashed: Can't locate object method \"next\" via package \"Test2::Mock\" at t/generated/test_Dir_next.t line 91.\n'\n# at t/generated/test_Dir_next.t line 92.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "next crashed: Can",
+          "line_number": "92",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_next.t",
+          "line": "92",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'next crashed: Can't locate object method \"next\" via package \"Test2::Mock\" at t/generated/test_Dir_next.t line 91.",
+            "'",
+            "# at t/generated/test_Dir_next.t line 92."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 6,
+        "description": "next crashed: Can't locate object method \"next\" via package \"Test2::Mock\" at t/generated/test_Dir_next.t line 124.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'next crashed: Can't locate object method \"next\" via package \"Test2::Mock\" at t/generated/test_Dir_next.t line 124.\n'\n# at t/generated/test_Dir_next.t line 125.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "next crashed: Can",
+          "line_number": "125",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_next.t",
+          "line": "125",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'next crashed: Can't locate object method \"next\" via package \"Test2::Mock\" at t/generated/test_Dir_next.t line 124.",
+            "'",
+            "# at t/generated/test_Dir_next.t line 125."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      }
+    ],
+    "test_File_spew.t": [
+      {
+        "test_num": 1,
+        "description": "spew is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "File object created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "File created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Content written correctly",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "File object created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "File created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Array content written correctly",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "File object created",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 9,
+        "description": "No error thrown for invalid IO mode",
+        "status": "not ok",
+        "diagnostics": "Failed test 'No error thrown for invalid IO mode'\n# at t/generated/test_File_spew.t line 38.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 25 after test #9.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "No error thrown for invalid IO mode",
+          "line_number": "38",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_File_spew.t",
+          "line": "38",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'No error thrown for invalid IO mode'",
+            "# at t/generated/test_File_spew.t line 38.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 25 after test #9."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_subsumes.t": [
+      {
+        "test_num": 1,
+        "description": "subsumes is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Too many arguments",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "No second entity",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Function returns result for non-Path::Class::Entity object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Function returns result for non-directory",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Absolute path subsumes",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Relative path subsumes",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Volumes do not match",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Volumes do not match'\n# at t/generated/test_Dir_subsumes.t line 32.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Volumes do not match",
+          "line_number": "32",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Dir_subsumes.t",
+          "line": "32",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Volumes do not match'",
+            "# at t/generated/test_Dir_subsumes.t line 32."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 9,
+        "description": "Root directory subsumes",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 10,
+        "description": "Current directory subsumes relative path",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_stringify.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_File_stringify.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_File_stringify.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.09 cusr  0.02 csys =  0.14 CPU)\nResult: FAIL\nBareword \"_spec\" not allowed while \"strict subs\" in use at t/generated/test_File_stringify.t line 20.\nExecution of t/generated/test_File_stringify.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_File_stringify.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_stat.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_Entity_stat.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_stat.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.09 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\n\"rmdir\" is not exported by the File::Path module\nCan't continue after import errors at t/generated/test_Entity_stat.t line 25.\nBEGIN failed--compilation aborted at t/generated/test_Entity_stat.t line 25.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_Entity_stat.t",
+          "compile_ok": true,
+          "direct_run_ok": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_remove.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_Dir_remove.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_remove.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.09 cusr  0.02 csys =  0.12 CPU)\nResult: FAIL\nGlobal symbol \"$rmdir\" requires explicit package name (did you forget to declare \"my $rmdir\"?) at t/generated/test_Dir_remove.t line 25.\nsyntax error at t/generated/test_Dir_remove.t line 25, near \"$rmdir(\"\nExecution of t/generated/test_Dir_remove.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_Dir_remove.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ]
+  },
+  "metadata": {
+    "test_framework": "Test2::V0",
+    "parsing_enhanced": true,
+    "diagnostic_features": [
+      "enhanced_error_reporting",
+      "structured_diagnostics",
+      "better_comparison_output",
+      "exception_capture",
+      "comparison_table_extraction"
+    ]
+  }
+}

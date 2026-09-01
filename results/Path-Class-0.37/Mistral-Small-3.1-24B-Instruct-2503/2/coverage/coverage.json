@@ -1,0 +1,637 @@
+{
+  "metadata": {
+    "subject": "Path-Class-0.37",
+    "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+    "run": "2",
+    "decoding": {
+      "temperature": 0.3,
+      "top_p": 0.2,
+      "max_tokens": 10000
+    },
+    "framework": {
+      "perl": "5.26.3",
+      "test": "Test2::V0 0.000139",
+      "coverage": "Devel::Cover 1.36"
+    }
+  },
+  "capping": {
+    "assertions_kept": 164,
+    "assertions_masked": 285,
+    "files_disabled": 14,
+    "expected_passing": 185,
+    "assertions_excluded_unreliable": 0,
+    "verified": {
+      "passing": 185,
+      "failing": 0
+    },
+    "files_disabled_present": 14
+  },
+  "coverage": {
+    "note": "Percentages as reported by Devel::Cover. 'modules' holds the files under test, which are the figures the study reports. 'total_all_files' is Devel::Cover's own Total row, which averages modules, generated tests and the prove binary together and is therefore not module coverage.",
+    "modules": [
+      {
+        "file": "Path/Class.pm",
+        "stmt": 95.6,
+        "bran": "n/a",
+        "cond": "n/a",
+        "sub": 90.9,
+        "pod": 100.0,
+        "time": 0.0,
+        "total": 94.8
+      },
+      {
+        "file": "Path/Class/Dir.pm",
+        "stmt": 45.4,
+        "bran": 25.0,
+        "cond": 29.7,
+        "sub": 57.5,
+        "pod": 100.0,
+        "time": 1.7,
+        "total": 43.5
+      },
+      {
+        "file": "Path/Class/Entity.pm",
+        "stmt": 57.6,
+        "bran": 42.8,
+        "cond": 66.6,
+        "sub": 57.1,
+        "pod": 0.0,
+        "time": 2.0,
+        "total": 48.5
+      },
+      {
+        "file": "Path/Class/File.pm",
+        "stmt": 57.8,
+        "bran": 45.5,
+        "cond": 0.0,
+        "sub": 68.9,
+        "pod": 95.2,
+        "time": 0.6,
+        "total": 56.6
+      }
+    ],
+    "test_files": [
+      {
+        "file": "test_Class_dir.t",
+        "stmt": 87.6,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 82.8
+      },
+      {
+        "file": "test_Class_foreign_dir.t",
+        "stmt": 90.3,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 1.6,
+        "total": 86.1
+      },
+      {
+        "file": "test_Class_foreign_file.t",
+        "stmt": 90.3,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 86.1
+      },
+      {
+        "file": "test_Class_tempdir.t",
+        "stmt": 87.8,
+        "bran": 43.7,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 80.8
+      },
+      {
+        "file": "test_Dir__is_local_dot_dir.t",
+        "stmt": 100.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 90.5
+      },
+      {
+        "file": "test_Dir_as_foreign.t",
+        "stmt": 88.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 76.4,
+        "pod": "n/a",
+        "time": 1.6,
+        "total": 81.9
+      },
+      {
+        "file": "test_Dir_basename.t",
+        "stmt": 87.2,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 81.9
+      },
+      {
+        "file": "test_Dir_children.t",
+        "stmt": 97.8,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 96.5
+      },
+      {
+        "file": "test_Dir_components.t",
+        "stmt": 91.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 83.3,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 86.8
+      },
+      {
+        "file": "test_Dir_contains.t",
+        "stmt": 97.4,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.3,
+        "total": 96.0
+      },
+      {
+        "file": "test_Dir_dir_list.t",
+        "stmt": 84.8,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 55.5,
+        "pod": "n/a",
+        "time": 1.3,
+        "total": 75.5
+      },
+      {
+        "file": "test_Dir_file.t",
+        "stmt": 88.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 80.0,
+        "pod": "n/a",
+        "time": 1.3,
+        "total": 81.9
+      },
+      {
+        "file": "test_Dir_file_class.t",
+        "stmt": 100.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 95.8
+      },
+      {
+        "file": "test_Dir_is_dir.t",
+        "stmt": 94.7,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 92.1
+      },
+      {
+        "file": "test_Dir_mkpath.t",
+        "stmt": 97.8,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.3,
+        "total": 96.5
+      },
+      {
+        "file": "test_Dir_new.t",
+        "stmt": 77.0,
+        "bran": 40.9,
+        "cond": "n/a",
+        "sub": 46.4,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 66.0
+      },
+      {
+        "file": "test_Dir_next.t",
+        "stmt": 82.8,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 57.6,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 74.8
+      },
+      {
+        "file": "test_Dir_open.t",
+        "stmt": 85.9,
+        "bran": 44.4,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 79.2
+      },
+      {
+        "file": "test_Dir_parent.t",
+        "stmt": 97.9,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 96.6
+      },
+      {
+        "file": "test_Dir_recurse.t",
+        "stmt": 85.7,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 90.0,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 85.3
+      },
+      {
+        "file": "test_Dir_relative.t",
+        "stmt": 97.6,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 96.3
+      },
+      {
+        "file": "test_Dir_remove.t",
+        "stmt": 97.5,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 96.1
+      },
+      {
+        "file": "test_Dir_rmtree.t",
+        "stmt": 86.9,
+        "bran": 46.6,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 79.1
+      },
+      {
+        "file": "test_Dir_stringify.t",
+        "stmt": 85.9,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 62.5,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 78.3
+      },
+      {
+        "file": "test_Dir_subsumes.t",
+        "stmt": 97.3,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 95.8
+      },
+      {
+        "file": "test_Dir_traverse.t",
+        "stmt": 93.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 92.3,
+        "pod": "n/a",
+        "time": 1.4,
+        "total": 89.3
+      },
+      {
+        "file": "test_Dir_volume.t",
+        "stmt": 89.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 84.8
+      },
+      {
+        "file": "test_Entity_PRUNE.t",
+        "stmt": 95.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 92.3,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 88.2
+      },
+      {
+        "file": "test_Entity__spec.t",
+        "stmt": 94.3,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 91.1
+      },
+      {
+        "file": "test_Entity__spec_class.t",
+        "stmt": 93.6,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 89.0
+      },
+      {
+        "file": "test_Entity_boolify.t",
+        "stmt": 100.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 95.9
+      },
+      {
+        "file": "test_Entity_is_dir.t",
+        "stmt": 92.4,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.6,
+        "total": 88.5
+      },
+      {
+        "file": "test_Entity_is_relative.t",
+        "stmt": 97.6,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 96.2
+      },
+      {
+        "file": "test_Entity_new.t",
+        "stmt": 84.6,
+        "bran": 37.5,
+        "cond": "n/a",
+        "sub": 83.3,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 79.1
+      },
+      {
+        "file": "test_Entity_relative.t",
+        "stmt": 98.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 96.9
+      },
+      {
+        "file": "test_Entity_resolve.t",
+        "stmt": 98.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 96.9
+      },
+      {
+        "file": "test_File_BEGIN.t",
+        "stmt": 94.2,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 83.3,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 87.5
+      },
+      {
+        "file": "test_File_basename.t",
+        "stmt": 91.8,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 87.5
+      },
+      {
+        "file": "test_File_components.t",
+        "stmt": 89.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 70.5,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 81.3
+      },
+      {
+        "file": "test_File_copy_to.t",
+        "stmt": 92.7,
+        "bran": 46.4,
+        "cond": "n/a",
+        "sub": 76.4,
+        "pod": "n/a",
+        "time": 1.9,
+        "total": 84.0
+      },
+      {
+        "file": "test_File_dir.t",
+        "stmt": 98.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 96.8
+      },
+      {
+        "file": "test_File_dir_class.t",
+        "stmt": 100.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 95.8
+      },
+      {
+        "file": "test_File_move_to.t",
+        "stmt": 98.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 96.9
+      },
+      {
+        "file": "test_File_new.t",
+        "stmt": 84.4,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 75.0,
+        "pod": "n/a",
+        "time": 1.2,
+        "total": 77.7
+      },
+      {
+        "file": "test_File_open.t",
+        "stmt": 86.8,
+        "bran": 44.4,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 80.1
+      },
+      {
+        "file": "test_File_opena.t",
+        "stmt": 97.8,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.6,
+        "total": 96.5
+      },
+      {
+        "file": "test_File_openr.t",
+        "stmt": 98.5,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.8,
+        "total": 92.1
+      },
+      {
+        "file": "test_File_openw.t",
+        "stmt": 91.2,
+        "bran": 44.4,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 83.6
+      },
+      {
+        "file": "test_File_remove.t",
+        "stmt": 95.6,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 92.9
+      },
+      {
+        "file": "test_File_slurp.t",
+        "stmt": 98.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.6,
+        "total": 96.8
+      },
+      {
+        "file": "test_File_spew_lines.t",
+        "stmt": 89.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 1.8,
+        "total": 82.5
+      },
+      {
+        "file": "test_File_stringify.t",
+        "stmt": 84.7,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 80.0,
+        "pod": "n/a",
+        "time": 1.8,
+        "total": 79.8
+      },
+      {
+        "file": "test_File_touch.t",
+        "stmt": 85.0,
+        "bran": 37.5,
+        "cond": "n/a",
+        "sub": 83.3,
+        "pod": "n/a",
+        "time": 12.1,
+        "total": 78.2
+      },
+      {
+        "file": "test_File_traverse_if.t",
+        "stmt": 88.5,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 68.4,
+        "pod": "n/a",
+        "time": 1.7,
+        "total": 81.4
+      }
+    ],
+    "harness": [
+      {
+        "file": "/usr/bin/prove",
+        "stmt": 100.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 0.6,
+        "total": 90.4
+      }
+    ],
+    "total_all_files": {
+      "stmt": 87.2,
+      "bran": 44.7,
+      "cond": 26.0,
+      "sub": 82.7,
+      "pod": 77.7,
+      "time": 100.0,
+      "total": 80.3
+    }
+  }
+}

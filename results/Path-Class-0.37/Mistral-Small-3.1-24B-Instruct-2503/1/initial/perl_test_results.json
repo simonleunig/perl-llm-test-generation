@@ -1,0 +1,2081 @@
+{
+  "summary": {
+    "total_files": 68,
+    "total_tests": 149,
+    "passed": 80,
+    "failed": 69,
+    "test2_framework": "Test2::V0",
+    "enhanced_diagnostics": {
+      "test2_enhanced_failures": 69,
+      "error_type_breakdown": {
+        "test_failure": 6,
+        "unknown": 46,
+        "no_output": 17
+      },
+      "diagnostic_coverage": "69/69",
+      "comparison_tables": 3,
+      "structured_failures": "3/69"
+    }
+  },
+  "tests": {
+    "test_File_basename.t": [
+      {
+        "test_num": 1,
+        "description": "basename is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "basename returns correct filename",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "basename returns undef when file attribute is undefined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "basename returns empty string when file attribute is empty",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "basename returns 0 when file attribute is set to zero",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "basename returns stringified array reference",
+        "status": "not ok",
+        "diagnostics": "Failed test 'basename returns stringified array reference'\n# at t/generated/test_File_basename.t line 55.\n# +-----------------------+----+-----------------------+\n# | GOT                   | OP | CHECK                 |\n# +-----------------------+----+-----------------------+\n# | ARRAY(0x575a41eebb78) | eq | ARRAY(0x575a42ae7010) |\n# +-----------------------+----+-----------------------+\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #1.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "basename returns stringified array reference",
+          "line_number": "55",
+          "expected": "eq",
+          "got": "#",
+          "file": "t/generated/test_File_basename.t",
+          "line": "55",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'basename returns stringified array reference'",
+            "# at t/generated/test_File_basename.t line 55.",
+            "# +-----------------------+----+-----------------------+",
+            "# | GOT                   | OP | CHECK                 |",
+            "# +-----------------------+----+-----------------------+",
+            "# | ARRAY(0x575a41eebb78) | eq | ARRAY(0x575a42ae7010) |",
+            "# +-----------------------+----+-----------------------+",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #1.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #1."
+          ],
+          "operator": "ARRAY(0x575a41eebb78)",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_new.t": [
+      {
+        "test_num": 1,
+        "description": "new is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Entity_new.t .. \nok 1 - new is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_new.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Entity_new.t line 15.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Entity_new.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_basename.t": [
+      {
+        "test_num": 1,
+        "description": "basename is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_basename.t .. \nok 1 - basename is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_basename.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_basename.t line 22.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_basename.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_is_dir.t": [
+      {
+        "test_num": 1,
+        "description": "is_dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "is_dir returns 1 for a Path::Class::Dir object",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function did not fail with unexpected argument",
+        "status": "not ok",
+        "diagnostics": "at t/generated/test_Dir_is_dir.t line 26.",
+        "error_details": {
+          "error_type": "unknown",
+          "error_message": null,
+          "expected": null,
+          "actual": null,
+          "failed_test_name": null,
+          "perl_errors": [],
+          "comparison_failure": false,
+          "got": null,
+          "file": null,
+          "line": null,
+          "exception": null,
+          "raw_diagnostics": [
+            "at t/generated/test_Dir_is_dir.t line 26."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_volume.t": [
+      {
+        "test_num": 1,
+        "description": "volume is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_volume.t .. \nok 1 - volume is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_volume.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_volume.t line 22.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_volume.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_new.t": [
+      {
+        "test_num": 1,
+        "description": "new is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_new.t .. \nok 1 - new is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_new.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.10 cusr  0.02 csys =  0.14 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_File_new.t line 18.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_new.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_rmtree.t": [
+      {
+        "test_num": 1,
+        "description": "rmtree is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_rmtree.t .. \nok 1 - rmtree is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_rmtree.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_rmtree.t line 21.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_rmtree.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_traverse.t": [
+      {
+        "test_num": 1,
+        "description": "traverse is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_traverse.t .. \nok 1 - traverse is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_traverse.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_traverse.t line 21.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_traverse.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_dir_list.t": [
+      {
+        "test_num": 1,
+        "description": "dir_list is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_dir_list.t .. \nok 1 - dir_list is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_dir_list.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.09 cusr  0.02 csys =  0.14 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_dir_list.t line 15.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_dir_list.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_is_dir.t": [
+      {
+        "test_num": 1,
+        "description": "is_dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "is_dir returns 0",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "is_dir returns 0 even with arguments",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "is_dir does not perform operations that could fail",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_traverse_if.t": [
+      {
+        "test_num": 1,
+        "description": "traverse_if is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_traverse_if.t .. \nok 1 - traverse_if is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_traverse_if.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_File_traverse_if.t line 15.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_traverse_if.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_openw.t": [
+      {
+        "test_num": 1,
+        "description": "openw is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_openw.t .. \nok 1 - openw is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_openw.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.14 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_File_openw.t line 22.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_openw.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity__spec_class.t": [
+      {
+        "test_num": 1,
+        "description": "_spec_class is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Returns correct File::Spec module for Unix",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Returns correct File::Spec module for Win32",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Dies with correct message for empty system type",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Dies with correct message for invalid system type",
+        "status": "not ok",
+        "diagnostics": "at t/generated/test_Entity__spec_class.t line 44.\n+---------------------------------+----+---------------------------------+\n| GOT                             | OP | CHECK                           |\n+---------------------------------+----+---------------------------------+\n| Invalid system type '' at Path/ | =~ | (?^:Invalid system type 'Unix!@ |\n| Class/Entity.pm line 33.\\n      |    | #')                             |\n+---------------------------------+----+---------------------------------+",
+        "error_details": {
+          "error_type": "unknown",
+          "error_message": null,
+          "expected": "(?^:Invalid system type 'Unix!@",
+          "actual": null,
+          "failed_test_name": null,
+          "perl_errors": [],
+          "comparison_failure": false,
+          "got": "Invalid system type '' at Path/",
+          "file": null,
+          "line": null,
+          "exception": null,
+          "raw_diagnostics": [
+            "at t/generated/test_Entity__spec_class.t line 44.",
+            "+---------------------------------+----+---------------------------------+",
+            "| GOT                             | OP | CHECK                           |",
+            "+---------------------------------+----+---------------------------------+",
+            "| Invalid system type '' at Path/ | =~ | (?^:Invalid system type 'Unix!@ |",
+            "| Class/Entity.pm line 33.\\n      |    | #')                             |",
+            "+---------------------------------+----+---------------------------------+"
+          ],
+          "operator": "=~",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_relative.t": [
+      {
+        "test_num": 1,
+        "description": "relative is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Entity_relative.t .. \nok 1 - relative is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_relative.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.07 cusr  0.01 csys =  0.10 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Entity_relative.t line 20.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Entity_relative.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_contains.t": [
+      {
+        "test_num": 1,
+        "description": "contains is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_contains.t .. \nok 1 - contains is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_contains.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.14 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_contains.t line 15.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_contains.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_stringify.t": [
+      {
+        "test_num": 1,
+        "description": "stringify is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_stringify.t .. \nok 1 - stringify is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_stringify.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.02 csys =  0.14 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_File_stringify.t line 18.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_stringify.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_opena.t": [
+      {
+        "test_num": 1,
+        "description": "opena is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_opena.t .. \nok 1 - opena is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_opena.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_File_opena.t line 22.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_opena.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_dir.t": [
+      {
+        "test_num": 1,
+        "description": "dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_dir.t .. \nok 1 - dir is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_dir.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  1 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_File_dir.t line 21.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_dir.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_open.t": [
+      {
+        "test_num": 1,
+        "description": "open is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_open.t .. \nok 1 - open is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_open.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_open.t line 27.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_open.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Class_foreign_dir.t": [
+      {
+        "test_num": 1,
+        "description": "foreign_dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Class_foreign_dir.t .. \nok 1 - foreign_dir is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Class_foreign_dir.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Class_foreign_dir.t line 21.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Class_foreign_dir.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_move_to.t": [
+      {
+        "test_num": 1,
+        "description": "move_to is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_move_to.t .. \nok 1 - move_to is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_move_to.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.10 cusr  0.02 csys =  0.15 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_File_move_to.t line 18.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_move_to.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_is_relative.t": [
+      {
+        "test_num": 1,
+        "description": "is_relative is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Entity_is_relative.t .. \nok 1 - is_relative is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_is_relative.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.01 csys =  0.12 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Entity_is_relative.t line 21.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Entity_is_relative.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_components.t": [
+      {
+        "test_num": 1,
+        "description": "components is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_components.t .. \nok 1 - components is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_components.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_File_components.t line 18.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_components.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir__is_local_dot_dir.t": [
+      {
+        "test_num": 1,
+        "description": "_is_local_dot_dir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Returns true for current directory (.)",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Returns true for parent directory (..)",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Returns false for empty string",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Returns false for empty string'\n# at t/generated/test_Dir__is_local_dot_dir.t line 47.\n# +-----+----+-------+\n# | GOT | OP | CHECK |\n# +-----+----+-------+\n# |     | eq | 0     |\n# +-----+----+-------+",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Returns false for empty string",
+          "line_number": "47",
+          "expected": "0",
+          "got": "#",
+          "file": "t/generated/test_Dir__is_local_dot_dir.t",
+          "line": "47",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Returns false for empty string'",
+            "# at t/generated/test_Dir__is_local_dot_dir.t line 47.",
+            "# +-----+----+-------+",
+            "# | GOT | OP | CHECK |",
+            "# +-----+----+-------+",
+            "# |     | eq | 0     |",
+            "# +-----+----+-------+"
+          ],
+          "operator": "eq",
+          "table_format": "test2_comparison",
+          "has_comparison_table": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Returns false for non-standard directory name",
+        "status": "not ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Returns true for parent directory (..)",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Returns true for parent directory (..)",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 8,
+        "description": "Returns true for parent directory (..)",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_spew_lines.t": [
+      {
+        "test_num": 1,
+        "description": "spew_lines is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_spew_lines.t .. \nok 1 - spew_lines is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_spew_lines.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  1 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_File_spew_lines.t line 23.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_spew_lines.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_components.t": [
+      {
+        "test_num": 1,
+        "description": "components is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_components.t .. \nok 1 - components is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_components.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.09 cusr  0.01 csys =  0.12 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_components.t line 21.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_components.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_open.t": [
+      {
+        "test_num": 1,
+        "description": "open is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_open.t .. \nok 1 - open is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_open.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_File_open.t line 24.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_open.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity__spec.t": [
+      {
+        "test_num": 1,
+        "description": "_spec is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.\n'\n# at t/generated/test_Entity__spec.t line 18.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "18",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity__spec.t",
+          "line": "18",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+            "'",
+            "# at t/generated/test_Entity__spec.t line 18."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.\n'\n# at t/generated/test_Entity__spec.t line 27.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "Function crashed: Can",
+          "line_number": "27",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity__spec.t",
+          "line": "27",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at Path/Class/Entity.pm line 46.",
+            "'",
+            "# at t/generated/test_Entity__spec.t line 27."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 4,
+        "description": "Returns File::Spec for non-object input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 5,
+        "description": "Returns File::Spec for undefined input",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      },
+      {
+        "test_num": 6,
+        "description": "Function crashed: Not a HASH reference at Path/Class/Entity.pm line 46.",
+        "status": "not ok",
+        "diagnostics": "Failed test 'Function crashed: Not a HASH reference at Path/Class/Entity.pm line 46.\n'\n# at t/generated/test_Entity__spec.t line 51.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #1.\nTests were run but no plan was declared and done_testing() was not seen.\nLooks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "test_failure",
+          "line_number": "51",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity__spec.t",
+          "line": "51",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'Function crashed: Not a HASH reference at Path/Class/Entity.pm line 46.",
+            "'",
+            "# at t/generated/test_Entity__spec.t line 51.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #1.",
+            "Tests were run but no plan was declared and done_testing() was not seen.",
+            "Looks like your test exited with 255 after test #1."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": [
+          " "
+        ]
+      }
+    ],
+    "test_Class_foreign_file.t": [
+      {
+        "test_num": 1,
+        "description": "foreign_file is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Class_foreign_file.t .. \nok 1 - foreign_file is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Class_foreign_file.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Class_foreign_file.t line 21.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Class_foreign_file.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_file.t": [
+      {
+        "test_num": 1,
+        "description": "file is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_file.t .. \nok 1 - file is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_file.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_file.t line 21.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_file.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_openr.t": [
+      {
+        "test_num": 1,
+        "description": "openr is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "File opened successfully",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "IO::File=GLOB->isa(...)",
+        "status": "not ok",
+        "diagnostics": "at t/generated/test_File_openr.t line 26.\nFailed: IO::File=GLOB->isa('Returned object is an IO::File')",
+        "error_details": {
+          "error_type": "unknown",
+          "error_message": "Failed: IO::File=GLOB->isa('Returned object is an IO::File')",
+          "expected": null,
+          "actual": null,
+          "failed_test_name": null,
+          "perl_errors": [],
+          "comparison_failure": false,
+          "got": null,
+          "file": null,
+          "line": null,
+          "exception": null,
+          "raw_diagnostics": [
+            "at t/generated/test_File_openr.t line 26.",
+            "Failed: IO::File=GLOB->isa('Returned object is an IO::File')"
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "File content is correct",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Error message is correct",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 6,
+        "description": "Error message is correct",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 7,
+        "description": "Error message is correct",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_PRUNE.t": [
+      {
+        "test_num": 1,
+        "description": "PRUNE is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "PRUNE returns a result",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "PRUNE returns a reference to itself",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "PRUNE returns a reference to the PRUNE function",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 5,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Entity_PRUNE.t .. \nok 1 - PRUNE is defined\nok 2 - PRUNE returns a result\nok 3 - PRUNE returns a reference to itself\nok 4 - PRUNE returns a reference to the PRUNE function\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 4 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_PRUNE.t (Wstat: 65280 Tests: 4 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=4,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.01 csys =  0.12 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Entity_PRUNE.t line 35.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #4.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Entity_PRUNE.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_relative.t": [
+      {
+        "test_num": 1,
+        "description": "relative is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_relative.t .. \nok 1 - relative is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_relative.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.10 cusr  0.02 csys =  0.15 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_relative.t line 20.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_relative.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_mkpath.t": [
+      {
+        "test_num": 1,
+        "description": "mkpath is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_mkpath.t .. \nok 1 - mkpath is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_mkpath.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.09 cusr  0.01 csys =  0.12 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_mkpath.t line 18.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_mkpath.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_remove.t": [
+      {
+        "test_num": 1,
+        "description": "remove is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_remove.t .. \nok 1 - remove is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_remove.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.09 cusr  0.02 csys =  0.14 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_remove.t line 26.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_remove.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_traverse_if.t": [
+      {
+        "test_num": 1,
+        "description": "traverse_if is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_traverse_if.t .. \nok 1 - traverse_if is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_traverse_if.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  1 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_traverse_if.t line 19.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_traverse_if.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_boolify.t": [
+      {
+        "test_num": 1,
+        "description": "boolify is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "boolify returns 1",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 3,
+        "description": "boolify did not crash when called with arguments",
+        "status": "not ok",
+        "diagnostics": "Failed test 'boolify did not crash when called with arguments'\n# at t/generated/test_Entity_boolify.t line 31.",
+        "error_details": {
+          "error_type": "test_failure",
+          "failed_test_name": "boolify did not crash when called with arguments",
+          "line_number": "31",
+          "expected": null,
+          "got": null,
+          "file": "t/generated/test_Entity_boolify.t",
+          "line": "31",
+          "exception": null,
+          "raw_diagnostics": [
+            "Failed test 'boolify did not crash when called with arguments'",
+            "# at t/generated/test_Entity_boolify.t line 31."
+          ],
+          "has_comparison_table": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 4,
+        "description": "Overloading mechanism crashed: Can't resolve method \"stringify\" overloading \"\"\"\" in package \"Path::Class::Entity\" at t/generated/test_Entity_boolify.t line 36.",
+        "status": "not ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_parent.t": [
+      {
+        "test_num": 1,
+        "description": "parent is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_parent.t .. \nok 1 - parent is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_parent.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.01 csys =  0.12 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_parent.t line 15.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_parent.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_copy_to.t": [
+      {
+        "test_num": 1,
+        "description": "copy_to is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_copy_to.t .. \nok 1 - copy_to is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_copy_to.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  1 wallclock secs ( 0.02 usr  0.01 sys +  0.10 cusr  0.02 csys =  0.15 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_File_copy_to.t line 15.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_copy_to.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_as_foreign.t": [
+      {
+        "test_num": 1,
+        "description": "as_foreign is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_as_foreign.t .. \nok 1 - as_foreign is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_as_foreign.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.11 cusr  0.01 csys =  0.14 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_as_foreign.t line 18.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_as_foreign.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Class_tempdir.t": [
+      {
+        "test_num": 1,
+        "description": "tempdir is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Class_tempdir.t .. \nok 1 - tempdir is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Class_tempdir.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.09 cusr  0.01 csys =  0.12 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Class_tempdir.t line 19.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Class_tempdir.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_stringify.t": [
+      {
+        "test_num": 1,
+        "description": "stringify is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_stringify.t .. \nok 1 - stringify is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_stringify.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  1 wallclock secs ( 0.01 usr  0.01 sys +  0.09 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_stringify.t line 18.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_stringify.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_dir_class.t": [
+      {
+        "test_num": 1,
+        "description": "dir_class is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "dir_class returns the correct class name",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_new.t": [
+      {
+        "test_num": 1,
+        "description": "new is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_new.t .. \nok 1 - new is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_new.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.10 cusr  0.02 csys =  0.14 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_new.t line 18.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_new.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_children.t": [
+      {
+        "test_num": 1,
+        "description": "children is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_children.t .. \nok 1 - children is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_children.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  1 wallclock secs ( 0.01 usr  0.00 sys +  0.09 cusr  0.02 csys =  0.12 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_children.t line 19.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_children.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_recurse.t": [
+      {
+        "test_num": 1,
+        "description": "recurse is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_recurse.t .. \nok 1 - recurse is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_recurse.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.09 cusr  0.01 csys =  0.11 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_recurse.t line 18.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_recurse.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_is_absolute.t": [
+      {
+        "test_num": 1,
+        "description": "is_absolute is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Entity_is_absolute.t .. \nok 1 - is_absolute is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_is_absolute.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.12 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Entity_is_absolute.t line 21.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Entity_is_absolute.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_file_class.t": [
+      {
+        "test_num": 1,
+        "description": "file_class is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "file_class returns the correct class name",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_next.t": [
+      {
+        "test_num": 1,
+        "description": "next is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_next.t .. \nok 1 - next is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_next.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.09 cusr  0.01 csys =  0.11 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_next.t line 19.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_next.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_spew.t": [
+      {
+        "test_num": 1,
+        "description": "spew is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_File_spew.t .. \nok 1 - spew is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_File_spew.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.07 cusr  0.01 csys =  0.11 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_File_spew.t line 21.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_File_spew.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_subsumes.t": [
+      {
+        "test_num": 1,
+        "description": "subsumes is defined",
+        "status": "ok",
+        "diagnostics": "",
+        "error_details": {},
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      },
+      {
+        "test_num": 2,
+        "description": "Test file exited with non-zero code",
+        "status": "not ok",
+        "diagnostics": "Tests passed but file exited with error:\n\nt/generated/test_Dir_subsumes.t .. \nok 1 - subsumes is defined\nDubious, test returned 255 (wstat 65280, 0xff00)\nAll 1 subtests passed \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_subsumes.t (Wstat: 65280 Tests: 1 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=1,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Dir_subsumes.t line 24.\n# Tests were run but no plan was declared and done_testing() was not seen.\n# Looks like your test exited with 255 after test #1.",
+        "error_details": {
+          "error_type": "unknown",
+          "file": "test_Dir_subsumes.t",
+          "exit_code": "non-zero"
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_traverse.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_File_traverse.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_File_traverse.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\nString found where operator expected at t/generated/test_File_traverse.t line 65, near \"unmock 'Path::Class::Entity'\"\n\t(Do you need to predeclare unmock?)\nsyntax error at t/generated/test_File_traverse.t line 65, near \"unmock 'Path::Class::Entity'\"\nExecution of t/generated/test_File_traverse.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_File_traverse.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_BEGIN.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_File_BEGIN.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_File_BEGIN.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_File_BEGIN.t line 11.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_File_BEGIN.t",
+          "compile_ok": true,
+          "direct_run_ok": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_slurp.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_File_slurp.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_File_slurp.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\nGlobal symbol \"$filename\" requires explicit package name (did you forget to declare \"my $filename\"?) at t/generated/test_File_slurp.t line 96.\nGlobal symbol \"$filename\" requires explicit package name (did you forget to declare \"my $filename\"?) at t/generated/test_File_slurp.t line 96.\nExecution of t/generated/test_File_slurp.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_File_slurp.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_remove.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_File_remove.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_File_remove.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\nBareword \"LOCK_EX\" not allowed while \"strict subs\" in use at t/generated/test_File_remove.t line 51.\nExecution of t/generated/test_File_remove.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_File_remove.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_volume.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_File_volume.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_File_volume.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.10 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\nString found where operator expected at t/generated/test_File_volume.t line 52, near \"unmock 'Path::Class::Dir'\"\n\t(Do you need to predeclare unmock?)\nsyntax error at t/generated/test_File_volume.t line 52, near \"unmock 'Path::Class::Dir'\"\nExecution of t/generated/test_File_volume.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_File_volume.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_lstat.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_Entity_lstat.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_lstat.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.08 cusr  0.01 csys =  0.11 CPU)\nResult: FAIL\nString found where operator expected at t/generated/test_Entity_lstat.t line 67, near \"unmock 'File::stat'\"\n\t(Do you need to predeclare unmock?)\nsyntax error at t/generated/test_Entity_lstat.t line 67, near \"unmock 'File::stat'\"\nExecution of t/generated/test_Entity_lstat.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_Entity_lstat.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_tempfile.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_Dir_tempfile.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_tempfile.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nString found where operator expected at t/generated/test_Dir_tempfile.t line 65, near \"unmock 'Path::Class::Dir'\"\n\t(Do you need to predeclare unmock?)\nString found where operator expected at t/generated/test_Dir_tempfile.t line 66, near \"unmock 'File::Temp'\"\n\t(Do you need to predeclare unmock?)\nsyntax error at t/generated/test_Dir_tempfile.t line 65, near \"unmock 'Path::Class::Dir'\"\nExecution of t/generated/test_Dir_tempfile.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_Dir_tempfile.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_stat.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_Entity_stat.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_stat.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  1 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\nsyntax error at t/generated/test_Entity_stat.t line 17, at EOF\nMissing right curly or square bracket at t/generated/test_Entity_stat.t line 17, at end of line\nExecution of t/generated/test_Entity_stat.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_Entity_stat.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_touch.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_File_touch.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_File_touch.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.09 cusr  0.02 csys =  0.13 CPU)\nResult: FAIL\nGlobal symbol \"$filename\" requires explicit package name (did you forget to declare \"my $filename\"?) at t/generated/test_File_touch.t line 74.\nExecution of t/generated/test_File_touch.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_File_touch.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_resolve.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_Entity_resolve.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_resolve.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.09 cusr  0.02 csys =  0.14 CPU)\nResult: FAIL\nString found where operator expected at t/generated/test_Entity_resolve.t line 70, near \"unmock 'Cwd'\"\n\t(Do you need to predeclare unmock?)\nString found where operator expected at t/generated/test_Entity_resolve.t line 71, near \"unmock 'Carp'\"\n\t(Do you need to predeclare unmock?)\nsyntax error at t/generated/test_Entity_resolve.t line 70, near \"unmock 'Cwd'\"\nExecution of t/generated/test_Entity_resolve.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_Entity_resolve.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Class_file.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_Class_file.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_Class_file.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.10 cusr  0.01 csys =  0.12 CPU)\nResult: FAIL\nString found where operator expected at t/generated/test_Class_file.t line 58, near \"unmock 'Path::Class::File'\"\n\t(Do you need to predeclare unmock?)\nsyntax error at t/generated/test_Class_file.t line 58, near \"unmock 'Path::Class::File'\"\nExecution of t/generated/test_Class_file.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_Class_file.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_new_foreign.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_Entity_new_foreign.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_new_foreign.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.01 usr  0.01 sys +  0.08 cusr  0.02 csys =  0.12 CPU)\nResult: FAIL\nString found where operator expected at t/generated/test_Entity_new_foreign.t line 57, near \"unmock 'Path::Class::Entity'\"\n\t(Do you need to predeclare unmock?)\nsyntax error at t/generated/test_Entity_new_foreign.t line 57, near \"unmock 'Path::Class::Entity'\"\nExecution of t/generated/test_Entity_new_foreign.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_Entity_new_foreign.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Dir_subdir.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_Dir_subdir.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_Dir_subdir.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.01 csys =  0.12 CPU)\nResult: FAIL\nString found where operator expected at t/generated/test_Dir_subdir.t line 65, near \"unmock 'Path::Class::Dir'\"\n\t(Do you need to predeclare unmock?)\nsyntax error at t/generated/test_Dir_subdir.t line 65, near \"unmock 'Path::Class::Dir'\"\nExecution of t/generated/test_Dir_subdir.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_Dir_subdir.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_cleanup.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_Entity_cleanup.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_cleanup.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.09 cusr  0.01 csys =  0.13 CPU)\nResult: FAIL\nString found where operator expected at t/generated/test_Entity_cleanup.t line 60, near \"unmock 'Path::Class::Entity'\"\n\t(Do you need to predeclare unmock?)\nsyntax error at t/generated/test_Entity_cleanup.t line 60, near \"unmock 'Path::Class::Entity'\"\nExecution of t/generated/test_Entity_cleanup.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_Entity_cleanup.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Entity_absolute.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_Entity_absolute.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_Entity_absolute.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.01 sys +  0.10 cusr  0.01 csys =  0.14 CPU)\nResult: FAIL\nString found where operator expected at t/generated/test_Entity_absolute.t line 57, near \"unmock 'Path::Class::Entity'\"\n\t(Do you need to predeclare unmock?)\nsyntax error at t/generated/test_Entity_absolute.t line 57, near \"unmock 'Path::Class::Entity'\"\nExecution of t/generated/test_Entity_absolute.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_Entity_absolute.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_Class_dir.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_Class_dir.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_Class_dir.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.02 usr  0.00 sys +  0.09 cusr  0.01 csys =  0.12 CPU)\nResult: FAIL\nmock_class should not be called in a void context without a registered handler at t/generated/test_Class_dir.t line 18.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_Class_dir.t",
+          "compile_ok": true,
+          "direct_run_ok": true
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ],
+    "test_File_as_foreign.t": [
+      {
+        "test_num": 0,
+        "description": "file did not execute",
+        "status": "not ok",
+        "diagnostics": "No TAP output captured for this test file; it may have failed to compile or been skipped by prove.\n\nperl -c output:\nNo specific compile log found - assume OK from prove execution\n\nperl direct run output:\nt/generated/test_File_as_foreign.t .. \nDubious, test returned 255 (wstat 65280, 0xff00)\nNo subtests run \n\nTest Summary Report\n-------------------\nt/generated/test_File_as_foreign.t (Wstat: 65280 Tests: 0 Failed: 0)\n  Non-zero exit status: 255\n  Parse errors: No plan found in TAP output\nFiles=1, Tests=0,  0 wallclock secs ( 0.01 usr  0.00 sys +  0.09 cusr  0.01 csys =  0.11 CPU)\nResult: FAIL\nToo many arguments for bless at t/generated/test_File_as_foreign.t line 43, near \"'file.txt' }\"\nToo many arguments for bless at t/generated/test_File_as_foreign.t line 69, near \"'file.txt' }\"\nExecution of t/generated/test_File_as_foreign.t aborted due to compilation errors.",
+        "error_details": {
+          "error_type": "no_output",
+          "file": "/user_repo/t/generated/test_File_as_foreign.t",
+          "compile_ok": true,
+          "direct_run_ok": false
+        },
+        "is_subtest": false,
+        "indent_level": 0,
+        "test2_diagnostics": []
+      }
+    ]
+  },
+  "metadata": {
+    "test_framework": "Test2::V0",
+    "parsing_enhanced": true,
+    "diagnostic_features": [
+      "enhanced_error_reporting",
+      "structured_diagnostics",
+      "better_comparison_output",
+      "exception_capture",
+      "comparison_table_extraction"
+    ]
+  }
+}

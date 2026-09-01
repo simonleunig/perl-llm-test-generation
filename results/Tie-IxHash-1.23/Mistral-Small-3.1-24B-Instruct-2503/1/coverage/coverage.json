@@ -1,0 +1,327 @@
+{
+  "metadata": {
+    "subject": "Tie-IxHash-1.23",
+    "model_id": "mistralai/mistral-small-3-1-24b-instruct-2503",
+    "run": "1",
+    "decoding": {
+      "temperature": 0.3,
+      "top_p": 0.2,
+      "max_tokens": 10000
+    },
+    "framework": {
+      "perl": "5.26.3",
+      "test": "Test2::V0 0.000139",
+      "coverage": "Devel::Cover 1.36"
+    }
+  },
+  "capping": {
+    "assertions_kept": 63,
+    "assertions_masked": 108,
+    "files_disabled": 2,
+    "expected_passing": 102,
+    "assertions_excluded_unreliable": 0,
+    "verified": {
+      "passing": 102,
+      "failing": 0
+    },
+    "files_disabled_present": 2
+  },
+  "coverage": {
+    "note": "Percentages as reported by Devel::Cover. 'modules' holds the files under test, which are the figures the study reports. 'total_all_files' is Devel::Cover's own Total row, which averages modules, generated tests and the prove binary together and is therefore not module coverage.",
+    "modules": [
+      {
+        "file": "Tie/IxHash.pm",
+        "stmt": 40.2,
+        "bran": 33.3,
+        "cond": 83.3,
+        "sub": 54.8,
+        "pod": 75.0,
+        "time": 0.8,
+        "total": 43.1
+      }
+    ],
+    "test_files": [
+      {
+        "file": "test_IxHash_DELETE.t",
+        "stmt": 85.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 90.0,
+        "pod": "n/a",
+        "time": 3.8,
+        "total": 84.7
+      },
+      {
+        "file": "test_IxHash_Delete_c2.t",
+        "stmt": 97.9,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.7,
+        "total": 96.6
+      },
+      {
+        "file": "test_IxHash_EXISTS.t",
+        "stmt": 97.7,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.7,
+        "total": 96.4
+      },
+      {
+        "file": "test_IxHash_FETCH.t",
+        "stmt": 88.5,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 3.6,
+        "total": 82.0
+      },
+      {
+        "file": "test_IxHash_FIRSTKEY.t",
+        "stmt": 91.5,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 3.5,
+        "total": 87.1
+      },
+      {
+        "file": "test_IxHash_Indices.t",
+        "stmt": 97.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.7,
+        "total": 95.6
+      },
+      {
+        "file": "test_IxHash_Keys.t",
+        "stmt": 94.6,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.7,
+        "total": 91.5
+      },
+      {
+        "file": "test_IxHash_Length.t",
+        "stmt": 93.8,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.8,
+        "total": 89.4
+      },
+      {
+        "file": "test_IxHash_NEXTKEY.t",
+        "stmt": 92.3,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 90.0,
+        "pod": "n/a",
+        "time": 3.7,
+        "total": 90.2
+      },
+      {
+        "file": "test_IxHash_Pop.t",
+        "stmt": 95.9,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.7,
+        "total": 93.6
+      },
+      {
+        "file": "test_IxHash_Pop2.t",
+        "stmt": 98.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.7,
+        "total": 96.7
+      },
+      {
+        "file": "test_IxHash_Push.t",
+        "stmt": 97.6,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.7,
+        "total": 96.3
+      },
+      {
+        "file": "test_IxHash_Push2.t",
+        "stmt": 96.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.8,
+        "total": 93.9
+      },
+      {
+        "file": "test_IxHash_Reorder.t",
+        "stmt": 92.5,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.8,
+        "total": 88.5
+      },
+      {
+        "file": "test_IxHash_Replace.t",
+        "stmt": 89.5,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 92.3,
+        "pod": "n/a",
+        "time": 3.8,
+        "total": 84.2
+      },
+      {
+        "file": "test_IxHash_STORE.t",
+        "stmt": 93.5,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.8,
+        "total": 89.5
+      },
+      {
+        "file": "test_IxHash_Shift.t",
+        "stmt": 86.9,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 90.0,
+        "pod": "n/a",
+        "time": 3.7,
+        "total": 86.2
+      },
+      {
+        "file": "test_IxHash_Shift2.t",
+        "stmt": 97.9,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.7,
+        "total": 96.6
+      },
+      {
+        "file": "test_IxHash_SortByKey.t",
+        "stmt": 88.8,
+        "bran": 50.0,
+        "cond": 33.3,
+        "sub": 85.7,
+        "pod": "n/a",
+        "time": 3.8,
+        "total": 82.2
+      },
+      {
+        "file": "test_IxHash_Splice.t",
+        "stmt": 90.2,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 90.0,
+        "pod": "n/a",
+        "time": 3.8,
+        "total": 88.8
+      },
+      {
+        "file": "test_IxHash_TIEHASH.t",
+        "stmt": 87.1,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 91.6,
+        "pod": "n/a",
+        "time": 3.7,
+        "total": 84.2
+      },
+      {
+        "file": "test_IxHash_Unshift.t",
+        "stmt": 93.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 90.0,
+        "pod": "n/a",
+        "time": 3.8,
+        "total": 90.9
+      },
+      {
+        "file": "test_IxHash_Unshift2.t",
+        "stmt": 63.3,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 71.4,
+        "pod": "n/a",
+        "time": 3.7,
+        "total": 63.7
+      },
+      {
+        "file": "test_IxHash_Values.t",
+        "stmt": 97.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.6,
+        "total": 95.5
+      },
+      {
+        "file": "test_IxHash__lrange.t",
+        "stmt": 96.9,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.7,
+        "total": 95.4
+      },
+      {
+        "file": "test_IxHash_new.t",
+        "stmt": 92.8,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 3.6,
+        "total": 89.4
+      }
+    ],
+    "harness": [
+      {
+        "file": "/usr/bin/prove",
+        "stmt": 100.0,
+        "bran": 50.0,
+        "cond": "n/a",
+        "sub": 100.0,
+        "pod": "n/a",
+        "time": 1.3,
+        "total": 90.4
+      }
+    ],
+    "total_all_files": {
+      "stmt": 84.5,
+      "bran": 45.3,
+      "cond": 66.6,
+      "sub": 90.4,
+      "pod": 75.0,
+      "time": 100.0,
+      "total": 81.4
+    }
+  }
+}
